@@ -1,14 +1,14 @@
 Multichar_Symbols
 
-+N +V +Adv +Num
++N +V +Adv +Num +A +Pron
 +Prop
 +Sg +Pl
 +Attr +Pred
 +Abs +Obj +Gen +Ins +Loc +Abl +Priv +Ben +Lat
 +Der/Caus +PrtPrc +PrsPrc
 +Sg1 +Sg2 +Sg3 +Pl1 +Pl2 +Pl3
-+Def +Indef
-+CLB
++Def +Indef +Pers
++CLB +Lquot +Rquot
 
 %> 
 %{а%} ! а or е 
@@ -17,8 +17,10 @@ Multichar_Symbols
 LEXICON Root
 
 NominalStems ;
+Pronouns ;
 VerbStems ;
 ProperNouns ;
+AdjStems ;
 Numerals ;
 Adverbs ; 
 Punct ; 
@@ -32,6 +34,7 @@ LEXICON Decl1
 LEXICON Nreg
 
 +N: Decl1 ;
++N+Pl:%>сем Decl1 ;
 
 LEXICON Nprop
 
@@ -73,6 +76,11 @@ LEXICON VerbStems
 
 пул Vreg ;
 
+LEXICON Pronouns 
+
+епĕ+Pron+Pers+Sg1:епĕ Decl1 ;
+епир+Pron+Pers+Pl1:епир Decl1 ;
+
 LEXICON Numerals
 
 пĕр NUMshort ;
@@ -81,10 +89,21 @@ LEXICON Numerals
 пилĕк NUMshort ;
 пилĕк:пиллĕк NUMlong ;
 
+LEXICON ADJ
+
++A: # ;
+
+LEXICON AdjStems
+
+шĕнĕ ADJ ;
+нумай ADJ ;
+
 LEXICON NominalStems
 
 тӳпе Nreg ;
 çĕре Nreg ; 
+завод Nreg ; 
+фабрик Nreg ; 
 
 LEXICON ProperNouns
 
@@ -99,3 +118,5 @@ LEXICON Punct
 . CLB ; 
 ? CLB ; 
 %! CLB ; 
+»+Rquot:» # ;
+«+Lquot:« # ; 
