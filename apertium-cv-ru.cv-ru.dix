@@ -5,6 +5,8 @@
     <sdef n="N"        c="Noun"/>
     <sdef n="np"       c="Proper noun"/>
     <sdef n="Prop"     c="Proper noun"/>
+    <sdef n="num"      c="Numeral"/>
+    <sdef n="Num"      c="Numeral"/>
 
     <sdef n="vbser"    c="Verb 'to be'"/>
     <sdef n="V"        c="Verb"/>
@@ -27,10 +29,18 @@
 
     <sdef n="Indef"    c="Indefinite"/>
 
+    <sdef n="GD"       c="Gender to be determined"/>
+    <sdef n="ND"       c="Number to be determined"/>
+
     <sdef n="CLB"      c="Clause level boundary"/>
     <sdef n="sent"     c="End of sentence"/>
   </sdefs>
   <section id="main" type="standard">
+
+    <!-- SECTION: Nouns -->
+
+    <e c="  0"><p><l>пĕр<s n="Num"/></l><r>один<s n="num"/><s n="GD"/></r></p></e>
+    <e c="  0"><p><l>пилĕк<s n="Num"/></l><r>пять<s n="num"/><s n="GD"/></r></p></e>
 
     <!-- SECTION: Nouns -->
 
@@ -51,7 +61,7 @@
 
     <!-- SECTION: Punctuation -->
 
-    <e><re>[.]</re><p><l><s n="CLB"/></l><r><s n="sent"/></r></p></e>
+    <e><re>[.!\?]</re><p><l><s n="CLB"/></l><r><s n="sent"/></r></p></e>
 
   </section>
 </dictionary>
