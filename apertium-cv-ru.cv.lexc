@@ -4,15 +4,17 @@ Multichar_Symbols
 +Prop
 +Sg +Pl
 +Attr +Pred
-+Abs +Obj +Gen +Ins +Loc +Abl +Priv +Ben +Lat
++Abs +Obj +Gen +Ins +Loc +Abl +Priv +Ben +Fin +Dist +Term
 +Der/Caus +PrtPrc +PrsPrc
 +Sg1 +Sg2 +Sg3 +Pl1 +Pl2 +Pl3
 +Def +Indef +Pers
++Top
 +CLB +Lquot +Rquot
 
 %> 
 %{а%} ! а or е 
 %{ӑ%} ! ӑ or ӗ
+%{р%} ! р оr т 
 
 LEXICON Root
 
@@ -28,8 +30,16 @@ Punct ;
 LEXICON Decl1 
 
 +Abs: # ;
-+Obj+Indef: # ;
-+Ins:%>п%{а%} # ;
++Gen:%>%{а%}н # ;        ! 
++Obj+Indef: # ;          ! 
++Loc:%>%{р%}%{а%} # ;        ! 
++Abl:%>%{р%}%{а%}н # ;        ! 
++Ins:%>п%{а%} # ;        ! 
+
++Fin:%>ш%{ӑ%}н # ;      ! 
++Priv:%>с%{ӑ%}р # ;      ! 
++Term:%>чен # ;          ! 
++Dist:%>серен # ;          ! 
 
 LEXICON Nreg
 
@@ -38,7 +48,11 @@ LEXICON Nreg
 
 LEXICON Nprop
 
-+N+Prop+Abs: # ;
++N+Prop: Decl1 ;
+
+LEXICON Ntop
+
++N+Prop+Top: Decl1 ;
 
 LEXICON NUMshort
 
@@ -75,6 +89,7 @@ LEXICON Vreg
 LEXICON VerbStems 
 
 пул Vreg ;
+кил Vreg ;
 
 LEXICON Pronouns 
 
@@ -104,10 +119,13 @@ LEXICON NominalStems
 çĕре Nreg ; 
 завод Nreg ; 
 фабрик Nreg ; 
+кун Nreg ;
+ту Nreg ;
 
 LEXICON ProperNouns
 
 Турӑ Nprop ; 
+Шупашкар Ntop ; 
 
 LEXICON Adverbs
 
