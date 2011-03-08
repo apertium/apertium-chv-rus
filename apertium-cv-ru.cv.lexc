@@ -1,0 +1,81 @@
+Multichar_Symbols
+
++N +V +Adv
++Prop
++Sg +Pl
++Abs +Obj +Gen +Ins +Loc +Abl +Priv +Ben +Lat
++Der/Caus +PrtPrc +PrsPrc
++Sg1 +Sg2 +Sg3 +Pl1 +Pl2 +Pl3
++Def +Indef
++CLB
+
+%> 
+%{а%} ! а or е 
+%{ӑ%} ! ӑ or ӗ
+
+LEXICON Root
+
+NominalStems ;
+VerbStems ;
+ProperNouns ;
+Adverbs ; 
+Punct ; 
+
+LEXICON Decl1 
+
++Abs: # ;
++Obj+Indef: # ;
++Ins:%>п%{а%} # ;
+
+LEXICON Nreg
+
++N: Decl1 ;
+
+LEXICON Nprop
+
++N+Prop+Abs: # ;
+
+LEXICON ADV 
+
++Adv: # ;
+
+LEXICON CLB
+
++CLB: # ;
+
+LEXICON Vconj
+
++PrsPrc:%>к%{а%}н Decl1 ;
++PrtPrc:%>н%{ӑ%} # ;
++Dur+Pres+Sg1:%>т%{ӑ%}р # ;
++Dur+Pres+Sg2:%>т%{ӑ%}н # ; 
++Dur+Pres+Sg3:%>ть # ;
++Dur+Pres+Pl1:%>тп%{ӑ%}р # ;
++Dur+Pres+Pl2:%>т%{ӑ%}р # ; 
++Dur+Pres+Pl3:%>шшӗ # ;
++Der/Caus:%>тар Vreg ;
+
+LEXICON Vreg
+
++V: Vconj ;
+
+LEXICON VerbStems 
+
+пул Vreg ;
+
+LEXICON NominalStems
+
+тӳпе Nreg ;
+çĕре Nreg ; 
+
+LEXICON ProperNouns
+
+Турӑ Nprop ; 
+
+LEXICON Adverbs
+
+пуçламӑшенче ADV ;
+
+LEXICON Punct
+
+. CLB ; 

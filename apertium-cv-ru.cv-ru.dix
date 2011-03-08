@@ -1,0 +1,57 @@
+<dictionary>
+  <alphabet/>
+  <sdefs>
+    <sdef n="n"        c="Noun"/>
+    <sdef n="N"        c="Noun"/>
+    <sdef n="np"       c="Proper noun"/>
+    <sdef n="Prop"     c="Proper noun"/>
+
+    <sdef n="vbser"    c="Verb 'to be'"/>
+    <sdef n="V"        c="Verb"/>
+
+    <sdef n="Adv"      c="Adverb"/>
+    <sdef n="adv"      c="Adverb"/>
+
+    <sdef n="nt"       c="Neuter"/>
+    <sdef n="f"        c="Feminine"/>
+    <sdef n="m"        c="Masculine"/>
+
+    <sdef n="nn"       c="Inanimate"/>
+    <sdef n="aa"       c="Animate"/>
+
+    <sdef n="al"       c="Other"/>
+
+    <sdef n="Abs"      c="Absolutive"/>
+    <sdef n="Ins"      c="Instrumental"/>
+    <sdef n="Obj"      c="Object"/>
+
+    <sdef n="Indef"    c="Indefinite"/>
+
+    <sdef n="CLB"      c="Clause level boundary"/>
+    <sdef n="sent"     c="End of sentence"/>
+  </sdefs>
+  <section id="main" type="standard">
+
+    <!-- SECTION: Nouns -->
+
+    <e c="  0"><p><l>тӳпе<s n="N"/></l><r>небо<s n="n"/><s n="nt"/><s n="nn"/></r></p></e>
+    <e c="  0"><p><l>çĕре<s n="N"/></l><r>земля<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
+
+    <!-- SECTION: Proper nouns -->
+
+    <e c="  0"><p><l>Турӑ<s n="N"/><s n="Prop"/></l><r>Бог<s n="n"/><s n="m"/><s n="aa"/></r></p></e>
+
+    <!-- SECTION: Adverbs -->
+
+    <e c="  0"><p><l>пуçламӑшенче<s n="Adv"/></l><r>в<b/>начале<s n="adv"/></r></p></e>
+
+    <!-- SECTION: Verbs -->
+
+    <e c="  0"><p><l>пул<s n="V"/></l><r>быть<s n="vbser"/></r></p></e>
+
+    <!-- SECTION: Punctuation -->
+
+    <e><re>[.]</re><p><l><s n="CLB"/></l><r><s n="sent"/></r></p></e>
+
+  </section>
+</dictionary>

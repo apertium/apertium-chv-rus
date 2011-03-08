@@ -1,0 +1,4 @@
+Пуçламӑшенче         Турӑ              тӳпепе       çĕре        пултарнӑ.
+puşlamӑš+N+Pl+Loc    Turӑ+N+Prop+Nom   tüpe+N+Ins   şĕr+N+Obj   pul+V+Caus+PrfPrc
+
+В начале сотворил Бог небо и землю.

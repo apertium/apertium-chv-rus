@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<transfer default="chunk">
+
+<section-def-cats>
+  <def-cat n="nom">
+     <cat-item tags="N.*"/>
+     <cat-item tags="N.Prop.*"/>
+  </def-cat>
+  <def-cat n="vblex">
+     <cat-item tags="V.*"/>
+  </def-cat>
+  <def-cat n="adv">
+     <cat-item tags="Adv"/>
+  </def-cat>
+</section-def-cats>
+
+<section-def-attrs>
+  <def-attr n="a_nom">
+     <attr-item tags="N"/>
+     <attr-item tags="N.Prop"/>
+     <attr-item tags="n"/>
+     <attr-item tags="np"/>
+     <attr-item tags="np.ant"/>
+     <attr-item tags="np.top"/>
+  </def-attr>
+
+  <def-attr n="a_verb">
+     <attr-item tags="V"/>
+     <attr-item tags="vblex"/>
+  </def-attr>
+
+  <def-attr n="tns">
+     <attr-item tags="Dur.Pres"/>
+     <attr-item tags="pres"/>
+     <attr-item tags="PrsPrc"/>
+     <attr-item tags="PrtPrc"/>
+  </def-attr>
+
+  <def-attr n="gen">
+     <attr-item tags="m"/>
+     <attr-item tags="f"/>
+     <attr-item tags="nt"/>
+     <attr-item tags="mf"/>
+  </def-attr>
+
+  <def-attr n="prsnbr">
+     <attr-item tags="Sg1"/>
+     <attr-item tags="Sg2"/>
+     <attr-item tags="Sg3"/>
+     <attr-item tags="Pl1"/>
+     <attr-item tags="Pl2"/>
+     <attr-item tags="Pl3"/>
+  </def-attr>
+
+  <def-attr n="prs">
+     <attr-item tags="p1"/>
+     <attr-item tags="p2"/>
+     <attr-item tags="p3"/>
+  </def-attr>
+
+  <def-attr n="anim">
+     <attr-item tags="nn"/>
+     <attr-item tags="an"/>
+     <attr-item tags="aa"/>
+  </def-attr>
+
+  <def-attr n="nbr">
+     <attr-item tags="Sg"/>
+     <attr-item tags="Pl"/>
+     <attr-item tags="sg"/>
+     <attr-item tags="pl"/>
+  </def-attr>
+
+  <def-attr n="case">
+     <attr-item tags="Abs"/>
+     <attr-item tags="Ben"/>
+     <attr-item tags="Gen"/>
+     <attr-item tags="Ins"/>
+     <attr-item tags="Obj"/>
+     <attr-item tags="Loc"/>
+     <attr-item tags="Abl"/>
+
+     <attr-item tags="nom"/>
+     <attr-item tags="acc"/>
+     <attr-item tags="dat"/>
+     <attr-item tags="gen"/>
+     <attr-item tags="ins"/>
+     <attr-item tags="prp"/>
+  </def-attr>
+
+</section-def-attrs>
+
+<section-def-vars>
+  <def-var n="number"/>
+  <def-var n="genere"/>
+</section-def-vars>
+
+<section-def-macros>
+
+<def-macro n="set_default_number_val1" npar="1" c="This is to set number when it is not morphologically expressed."> 
+    <choose>
+        <when> 
+            <test><not><equal><clip pos="1" side="sl" part="nbr"/><lit-tag v="Pl"/></equal></not></test>
+            <let><var n="number"/><lit-tag v="sg"/></let>
+        </when>
+    </choose>
+</def-macro>
+<def-macro n="set_default_case_pattern1" npar="1" c="This is the default case transfer pattern.">
+    <choose>
+        <when> <!-- Change +Abs to +nom -->
+            <test><equal><clip pos="1" side="sl" part="case"/><lit-tag v="Abs"/></equal></test>
+            <let><clip pos="1" side="tl" part="case"/><lit-tag v="nom"/></let>
+        </when>
+        <when> <!-- Change +Obj to +acc -->
+            <test><equal><clip pos="1" side="sl" part="case"/><lit-tag v="Obj"/></equal></test>
+            <let><clip pos="1" side="tl" part="case"/><lit-tag v="acc"/></let>
+        </when>
+        <when> <!-- Change +Ins to +ins -->
+            <test><equal><clip pos="1" side="sl" part="case"/><lit-tag v="Ins"/></equal></test>
+            <let><clip pos="1" side="tl" part="case"/><lit-tag v="ins"/></let>
+        </when>
+    </choose>
+</def-macro>
+</section-def-macros>
+
+<section-rules>
+<!-- Sintagmas nominales -->
+
+  <rule comment="regla: nom">
+     <pattern>
+       <pattern-item n="nom"/>
+     </pattern>
+     <action>
+       <call-macro n="set_default_number_val1">
+         <with-param pos="1"/>
+       </call-macro>
+       <call-macro n="set_default_case_pattern1">
+         <with-param pos="1"/>
+       </call-macro>
+       <out>
+         <chunk name="nom" case="caseFirstWord">
+           <tags>
+             <tag><lit-tag v="SN"/></tag>
+             <tag><clip pos="1" side="tl" part="gen"/></tag>
+             <tag><clip pos="1" side="tl" part="anim"/></tag>
+             <tag><var n="number"/></tag>
+	     <tag><clip pos="1" side="tl" part="case"/></tag>
+           </tags>
+           <lu>
+             <clip pos="1" side="tl" part="lem"/>
+             <clip pos="1" side="tl" part="a_nom"/>
+             <clip pos="1" side="tl" part="gen" link-to="2"/>
+             <clip pos="1" side="tl" part="anim" link-to="3"/>
+             <lit-tag v="4"/>
+	     <clip pos="1" side="tl" part="case" link-to="5"/>
+           </lu>
+         </chunk>
+       </out>
+     </action>
+  </rule>
+
+
+</section-rules>
+
+</transfer>

@@ -1,0 +1,11 @@
+DELIMITERS = "." ;
+
+LIST N = N ; 
+LIST Obj = Obj ;
+LIST Abs = Abs ;
+LIST S-BOUNDARY = "." ;
+
+SECTION
+
+REMOVE N + Abs IF (0 Abs) (0 Obj) ((-1C* N + Abs BARRIER S-BOUNDARY) OR (1C* N + Abs BARRIER S-BOUNDARY));
+    ## Пуçламăшенче Турă тӳпепе çĕре пултарнă.
