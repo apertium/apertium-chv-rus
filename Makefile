@@ -7,7 +7,7 @@ all:
 	hfst-twolc -R -i apertium-cv-ru.cv.twol -o .deps/cv-ru.twol.hfst
 	hfst-compose-intersect -1 .deps/cv-ru.lexc.hfst -2 .deps/cv-ru.twol.hfst -o .deps/cv-ru.gen.hfst
 	hfst-invert .deps/cv-ru.gen.hfst | hfst-substitute -F apertium-cv-ru.cv.relabel > .deps/cv-ru.morf.hfst
-	hfst-lookup-optimize -i .deps/cv-ru.morf.hfst -o cv-ru.automorf.hfst
+	hfst-fst2fst -O -i .deps/cv-ru.morf.hfst -o cv-ru.automorf.hfst
 
 	lt-comp lr apertium-cv-ru.cv-ru.dix cv-ru.autobil.bin
 	lt-comp rl $(RU) cv-ru.autogen.bin
