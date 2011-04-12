@@ -1,11 +1,21 @@
 DELIMITERS = "." ;
 
 LIST N = N ; 
+LIST V = V ; 
+LIST Pron = Pron ; 
 LIST Obj = Obj ;
 LIST Abs = Abs ;
 LIST S-BOUNDARY = "." ;
 
+LIST PERSON = Sg1 Sg2 Sg3 Pl1 Pl2 Pl3 ;
+
+SET NOMINAL = N | Pron ;
+
 SECTION
 
-REMOVE N + Abs IF (0 Abs) (0 Obj) ((-1C* N + Abs BARRIER S-BOUNDARY) OR (1C* N + Abs BARRIER S-BOUNDARY));
+REMOVE Abs IF (0 Abs) (0 Obj) ((-1C* Abs BARRIER S-BOUNDARY) OR (1C* Abs BARRIER S-BOUNDARY));
     ## Пуçламăшенче Турă тӳпепе çĕре пултарнă.
+    ## Епир нумай шĕнĕ заводсем, фабриксем тӑватпӑр.
+
+SELECT Pron + $$PERSON + Abs IF (1C* V + $$PERSON); 
+    ## Епир нумай шĕнĕ заводсем, фабриксем тӑватпӑр.

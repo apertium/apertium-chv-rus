@@ -1,20 +1,27 @@
 Multichar_Symbols
 
-+N +V +Adv +Num +A +Pron
-+Prop
-+Sg +Pl
-+Attr +Pred
-+Abs +Obj +Gen +Ins +Loc +Abl +Priv +Ben +Fin +Dist +Term
-+Der/Caus +PrtPrc +PrsPrc
-+Sg1 +Sg2 +Sg3 +Pl1 +Pl2 +Pl3
-+Def +Indef +Pers
-+Top
-+CLB +Lquot +Rquot
+! Multichar symbols are enclosed in < > according to Apertium style, 
+! archigraphemes are enclosed in { } according to Omorfi style
 
-%> 
-%{а%} ! а or е 
-%{ӑ%} ! ӑ or ӗ
-%{р%} ! р оr т 
+%<n%> %<np%> %<v%> %<adv%> %<num%> %<adj%> %<prn%> %<post%>
+%<sg%> %<pl%>
+%<attr%> %<pred%>
+%<abs%> %<obj%> %<gen%> %<ins%> %<loc%> %<abl%> 
+%<pp%> %<pprs%> %<dur%> %<pres%>
+%<p1%>%<sg%> %<p2%>%<sg%> %<p3%>%<sg%> %<p1%>%<pl%> %<p2%>%<pl%> %<p3%>%<pl%>
+%<def%> %<ind%> %<pers%>
+%<top%>
+%<clb%> %<lquot%> %<rquot%>
+%<der‣caus%>
+%<cnjcoo%> %<cnjsub%>
+%<part%>
+
+%>    ! Morpheme boundary
+%{а%} ! Archivowel: а or е 
+%{ӑ%} ! Archivowel: ӑ or ӗ
+%{р%} ! Archiconsonant: р оr т 
+%{н%} ! Archiconsonant: н or м 
+%{ь%} ! ь or ''
 
 LEXICON Root
 
@@ -25,76 +32,147 @@ ProperNouns ;
 AdjStems ;
 Numerals ;
 Adverbs ; 
+Postpos ; 
+Particles ; 
+Conjunctions ; 
 Punct ; 
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! Paradigms 
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 LEXICON Decl1 
 
-+Abs: # ;
-+Gen:%>%{а%}н # ;        ! 
-+Obj+Indef: # ;          ! 
-+Loc:%>%{р%}%{а%} # ;        ! 
-+Abl:%>%{р%}%{а%}н # ;        ! 
-+Ins:%>п%{а%} # ;        ! 
-
-+Fin:%>ш%{ӑ%}н # ;      ! 
-+Priv:%>с%{ӑ%}р # ;      ! 
-+Term:%>чен # ;          ! 
-+Dist:%>серен # ;          ! 
+%<abs%>: # ;
+%<gen%>:%>%{а%}н # ;        ! 
+%<obj%>%<ind%>: # ;          ! 
+%<obj%>%<def%>:%>%{а%} # ;          ! 
+%<loc%>:%>%{р%}%{а%} # ;        ! 
+%<abl%>:%>%{р%}%{а%}н # ;        ! 
+%<ins%>:%>п%{а%} # ;        ! 
+%<fin%>:%>ш%{ӑ%}н # ;      ! 
+%<priv%>:%>с%{ӑ%}р # ;      ! 
+%<term%>:%>чен # ;          ! 
+%<dist%>:%>серен # ;          ! 
 
 LEXICON Nreg
 
-+N: Decl1 ;
-+N+Pl:%>сем Decl1 ;
+%<n%>: Decl1 ;
+%<n%>%<pl%>:%>се%{н%} Decl1 ;
 
 LEXICON Nprop
 
-+N+Prop: Decl1 ;
+%<np%>: Decl1 ;
 
 LEXICON Ntop
 
-+N+Prop+Top: Decl1 ;
+%<np%>%<top%>: Decl1 ;
 
 LEXICON NUMshort
 
-+Num+Attr: # ;
+%<num%>%<attr%>: # ;
 
 LEXICON NUMlong
 
-+Num+Pred: # ;
+%<num%>%<pred%>: # ;
 
 LEXICON ADV 
 
-+Adv: # ;
+%<adv%>: # ;
+
+LEXICON POST 
+
+%<post%>: # ;
 
 LEXICON CLB
 
-+CLB: # ;
+%<clb%>: # ;
+
+LEXICON ADJ
+
+%<adj%>: # ;
+
+LEXICON CC 
+
+%<cnjcoo%>: # ; 
+
+LEXICON CS
+
+%<cnjsub%>: # ; 
+
+LEXICON PART
+
+%<part%>: # ; 
 
 LEXICON Vconj
 
-+PrsPrc:%>к%{а%}н Decl1 ;
-+PrtPrc:%>н%{ӑ%} # ;
-+Dur+Pres+Sg1:%>т%{ӑ%}р # ;
-+Dur+Pres+Sg2:%>т%{ӑ%}н # ; 
-+Dur+Pres+Sg3:%>ть # ;
-+Dur+Pres+Pl1:%>тп%{ӑ%}р # ;
-+Dur+Pres+Pl2:%>т%{ӑ%}р # ; 
-+Dur+Pres+Pl3:%>шшӗ # ;
-+Der/Caus:%>тар Vreg ;
+%<pprs%>:%>к%{а%}н Decl1 ;
+%<pp%>:%>н%{ӑ%} # ;
+%<dur%>%<pres%>%<p1%>%<sg%>:%>т%{ӑ%}р # ;
+%<dur%>%<pres%>%<p2%>%<sg%>:%>т%{ӑ%}н # ; 
+%<dur%>%<pres%>%<p3%>%<sg%>:%>т%{ь%} # ;
+%<dur%>%<pres%>%<p1%>%<pl%>:%>тп%{ӑ%}р # ;
+%<dur%>%<pres%>%<p2%>%<pl%>:%>т%{ӑ%}р # ; 
+%<dur%>%<pres%>%<p3%>%<pl%>:%>шшӗ # ;
+!%<der‣caus%>%<v%>:%>тар Vreg ; 
 
 LEXICON Vreg
 
-+V: Vconj ;
-
-LEXICON VerbStems 
-
-пул Vreg ;
-кил Vreg ;
+%<v%>: Vconj ;
 
 LEXICON Pronouns 
 
-епĕ+Pron+Pers+Sg1:епĕ Decl1 ;
-епир+Pron+Pers+Pl1:епир Decl1 ;
+!! Review forms with -(ăn)
+
+епĕ%<prn%>%<pers%>%<p1%>%<sg%>%<abs%>:епĕ # ;
+епĕ%<prn%>%<pers%>%<p1%>%<sg%>%<obj%>:ман # ;
+епĕ%<prn%>%<pers%>%<p1%>%<sg%>%<obj%>:манӑн # ;
+епĕ%<prn%>%<pers%>%<p1%>%<sg%>%<gen%>:мана # ;
+епĕ%<prn%>%<pers%>%<p1%>%<sg%>%<loc%>:манра # ;
+епĕ%<prn%>%<pers%>%<p1%>%<sg%>%<abl%>:манран # ;
+епĕ%<prn%>%<pers%>%<p1%>%<sg%>%<ins%>:манпа # ;
+
+есĕ%<prn%>%<pers%>%<p2%>%<sg%>%<abs%>:есĕ # ;
+есĕ%<prn%>%<pers%>%<p2%>%<sg%>%<obj%>:сан # ;
+есĕ%<prn%>%<pers%>%<p2%>%<sg%>%<obj%>:санӑн # ;
+есĕ%<prn%>%<pers%>%<p2%>%<sg%>%<gen%>:сана # ;
+есĕ%<prn%>%<pers%>%<p2%>%<sg%>%<loc%>:санра # ;
+есĕ%<prn%>%<pers%>%<p2%>%<sg%>%<abl%>:санран # ;
+есĕ%<prn%>%<pers%>%<p2%>%<sg%>%<ins%>:санпа # ;
+
+вӑл%<prn%>%<pers%>%<p3%>%<sg%>%<abs%>:вӑл # ;
+вӑл%<prn%>%<pers%>%<p3%>%<sg%>%<obj%>:ун # ;
+вӑл%<prn%>%<pers%>%<p3%>%<sg%>%<obj%>:унӑн # ;
+вӑл%<prn%>%<pers%>%<p3%>%<sg%>%<gen%>:ӑна # ;
+вӑл%<prn%>%<pers%>%<p3%>%<sg%>%<loc%>:унра # ;
+вӑл%<prn%>%<pers%>%<p3%>%<sg%>%<abl%>:унран # ;
+вӑл%<prn%>%<pers%>%<p3%>%<sg%>%<ins%>:унпа # ;
+
+епир%<prn%>%<pers%>%<p1%>%<pl%>%<abs%>:епир #;
+епир%<prn%>%<pers%>%<p1%>%<pl%>%<obj%>:пире #;
+епир%<prn%>%<pers%>%<p1%>%<pl%>%<gen%>:пирĕн #;
+епир%<prn%>%<pers%>%<p1%>%<pl%>%<loc%>:пирĕнте #;
+епир%<prn%>%<pers%>%<p1%>%<pl%>%<abl%>:пирĕнтен #;
+епир%<prn%>%<pers%>%<p1%>%<pl%>%<ins%>:пирĕнпе #;
+
+есир%<prn%>%<pers%>%<p2%>%<pl%>%<abs%>:есир #;
+есир%<prn%>%<pers%>%<p2%>%<pl%>%<obj%>:сире #;
+есир%<prn%>%<pers%>%<p2%>%<pl%>%<gen%>:сирĕн #;
+есир%<prn%>%<pers%>%<p2%>%<pl%>%<loc%>:сирĕнте #;
+есир%<prn%>%<pers%>%<p2%>%<pl%>%<abl%>:сирĕнтен #;
+есир%<prn%>%<pers%>%<p2%>%<pl%>%<ins%>:сирĕнпе #;
+
+вĕсем%<prn%>%<pers%>%<p3%>%<pl%>%<abs%>:вĕсем #;
+вĕсем%<prn%>%<pers%>%<p3%>%<pl%>%<obj%>:вĕсен #;
+вĕсем%<prn%>%<pers%>%<p3%>%<pl%>%<obj%>:вĕсенĕн #;
+вĕсем%<prn%>%<pers%>%<p3%>%<pl%>%<gen%>:вĕсене #;
+вĕсем%<prn%>%<pers%>%<p3%>%<pl%>%<loc%>:вĕсенче #;
+вĕсем%<prn%>%<pers%>%<p3%>%<pl%>%<abl%>:вĕсенчен #;
+вĕсем%<prn%>%<pers%>%<p3%>%<pl%>%<ins%>:вĕсемпе #;
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! Entries 
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 LEXICON Numerals
 
@@ -104,14 +182,9 @@ LEXICON Numerals
 пилĕк NUMshort ;
 пилĕк:пиллĕк NUMlong ;
 
-LEXICON ADJ
-
-+A: # ;
-
 LEXICON AdjStems
 
 шĕнĕ ADJ ;
-нумай ADJ ;
 
 LEXICON NominalStems
 
@@ -121,6 +194,10 @@ LEXICON NominalStems
 фабрик Nreg ; 
 кун Nreg ;
 ту Nreg ;
+ача Nreg ;
+чечек Nreg ; 
+уй Nreg ;
+кĕнеке Nreg ;
 
 LEXICON ProperNouns
 
@@ -129,12 +206,44 @@ LEXICON ProperNouns
 
 LEXICON Adverbs
 
-пуçламӑшенче ADV ;
+пу% çламӑшенче ADV ;
+нумай ADV ;
+киле ADV ;
+
+LEXICON Postpos 
+
+урлӑ POST ; 
+пĕрле POST ; 
+витĕр POST ; 
+пек POST ; 
+таран POST ; 
+тӑрӑх POST ; 
+пула POST ; 
+пирки POST ; 
+валли POST ; 
+кура POST ; 
+хирĕç POST ; 
+пуçне POST ; 
+
+LEXICON Conjunctions 
+
+тата CC ; 
+
+LEXICON Particles 
+
+акӑ PART ;
+
+LEXICON VerbStems 
+
+пул Vreg ;
+кил Vreg ;
+тӑва Vreg ;
+ил Vreg ;
 
 LEXICON Punct
 
 . CLB ; 
 ? CLB ; 
 %! CLB ; 
-»+Rquot:» # ;
-«+Lquot:« # ; 
+»%<rquot%>:» # ;
+«%<lquot%>:« # ; 

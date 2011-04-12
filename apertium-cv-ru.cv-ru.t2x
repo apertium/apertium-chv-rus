@@ -7,7 +7,9 @@
     </def-cat>
     <def-cat n="SN">
       <cat-item tags="SN"/>
-      <cat-item tags="SN.*"/>
+    </def-cat>
+    <def-cat n="SN_ABL">
+      <cat-item tags="SN.*.*.*.abl"/>
     </def-cat>
     <def-cat n="V">
       <cat-item tags="V"/>
@@ -21,6 +23,11 @@
       <attr-item tags="pl"/>
       <attr-item tags="sp"/>
       <attr-item tags="ND"/>
+    </def-attr>
+    <def-attr n="case">
+      <attr-item tags="abs"/>
+      <attr-item tags="abl"/>
+      <attr-item tags="gen"/>
     </def-attr>
   </section-def-attrs>
 
@@ -45,6 +52,35 @@
         </out>
       </action>
     </rule>
+
+    <rule comment="REGLA: SN_ABL">
+      <pattern>
+        <pattern-item n="SN_ABL"/>
+      </pattern>
+      <action>
+        <let>
+          <clip pos="1" part="case"/>
+          <lit-tag v="gen"/>
+        </let>
+        <out>
+          <chunk>
+            <lit v="из"/>
+            <lit-tag v="PREP"/>
+            <lit v="{^"/>
+            <lit v="из"/>
+            <lit-tag v="pr"/>
+            <lit v="$}"/> 
+          </chunk>
+          <b/>
+          <chunk>
+            <clip pos="1" part="lem"/>
+            <clip pos="1" part="tags"/>
+            <clip pos="1" part="chcontent"/>
+          </chunk>
+        </out>
+      </action>
+    </rule>
+
 
   </section-rules>
 </interchunk>

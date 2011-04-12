@@ -2,22 +2,30 @@
 <transfer default="chunk">
 
 <section-def-cats>
+  <def-cat n="pron">
+     <cat-item tags="prn.*"/>
+  </def-cat>
+
   <def-cat n="nom">
-     <cat-item tags="N.*"/>
-     <cat-item tags="N.Prop.*"/>
+     <cat-item tags="n.*"/>
+     <cat-item tags="np.*"/>
   </def-cat>
+
+  <def-cat n="vbfin">
+     <cat-item tags="v.dur.*"/>
+  </def-cat>
+
   <def-cat n="vblex">
-     <cat-item tags="V.*"/>
+     <cat-item tags="v.*"/>
   </def-cat>
+
   <def-cat n="adv">
-     <cat-item tags="Adv"/>
+     <cat-item tags="adv"/>
   </def-cat>
 </section-def-cats>
 
 <section-def-attrs>
   <def-attr n="a_nom">
-     <attr-item tags="N"/>
-     <attr-item tags="N.Prop"/>
      <attr-item tags="n"/>
      <attr-item tags="np"/>
      <attr-item tags="np.ant"/>
@@ -25,31 +33,22 @@
   </def-attr>
 
   <def-attr n="a_verb">
-     <attr-item tags="V"/>
+     <attr-item tags="v"/>
      <attr-item tags="vblex"/>
   </def-attr>
 
-  <def-attr n="tns">
-     <attr-item tags="Dur.Pres"/>
-     <attr-item tags="pres"/>
-     <attr-item tags="PrsPrc"/>
-     <attr-item tags="PrtPrc"/>
+  <def-attr n="a_prn">
+     <attr-item tags="prn"/>
+     <attr-item tags="prn.pers"/>
   </def-attr>
+
 
   <def-attr n="gen">
      <attr-item tags="m"/>
      <attr-item tags="f"/>
      <attr-item tags="nt"/>
      <attr-item tags="mf"/>
-  </def-attr>
-
-  <def-attr n="prsnbr">
-     <attr-item tags="Sg1"/>
-     <attr-item tags="Sg2"/>
-     <attr-item tags="Sg3"/>
-     <attr-item tags="Pl1"/>
-     <attr-item tags="Pl2"/>
-     <attr-item tags="Pl3"/>
+     <attr-item tags="GD"/>
   </def-attr>
 
   <def-attr n="prs">
@@ -64,6 +63,16 @@
      <attr-item tags="aa"/>
   </def-attr>
 
+  <def-attr n="aspect">
+     <attr-item tags="imperf"/>
+     <attr-item tags="perf"/>
+  </def-attr>
+
+  <def-attr n="temps">
+     <attr-item tags="dur.pres"/>
+     <attr-item tags="pres"/>
+  </def-attr>
+
   <def-attr n="nbr">
      <attr-item tags="Sg"/>
      <attr-item tags="Pl"/>
@@ -72,14 +81,13 @@
   </def-attr>
 
   <def-attr n="case">
-     <attr-item tags="Abs"/>
-     <attr-item tags="Ben"/>
-     <attr-item tags="Gen"/>
-     <attr-item tags="Ins"/>
-     <attr-item tags="Obj"/>
-     <attr-item tags="Obj.Indef"/>
-     <attr-item tags="Loc"/>
-     <attr-item tags="Abl"/>
+     <attr-item tags="abs"/>
+     <attr-item tags="ben"/>
+     <attr-item tags="obj"/>
+     <attr-item tags="obj.ind"/>
+     <attr-item tags="obj.def"/>
+     <attr-item tags="loc"/>
+     <attr-item tags="abl"/>
 
      <attr-item tags="nom"/>
      <attr-item tags="acc"/>
@@ -101,32 +109,46 @@
 <def-macro n="set_default_number_val1" npar="1" c="This is to set number when it is not morphologically expressed."> 
     <choose>
         <when> 
-            <test><not><equal><clip pos="1" side="sl" part="nbr"/><lit-tag v="Pl"/></equal></not></test>
+            <test><not><equal><clip pos="1" side="sl" part="nbr"/><lit-tag v="pl"/></equal></not></test>
             <let><var n="number"/><lit-tag v="sg"/></let>
+        </when>
+        <when> 
+            <test><equal><clip pos="1" side="sl" part="nbr"/><lit-tag v="pl"/></equal></test>
+            <let><var n="number"/><lit-tag v="pl"/></let>
         </when>
     </choose>
 </def-macro>
+
 <def-macro n="set_default_case_pattern1" npar="1" c="This is the default case transfer pattern.">
     <choose>
         <when> <!-- Change +Obj to +acc -->
             <test>
               <or>
-                <equal><clip pos="1" side="sl" part="case"/><lit-tag v="Obj"/></equal>
-                <equal><clip pos="1" side="sl" part="case"/><lit-tag v="Obj.Indef"/></equal>
+                <equal><clip pos="1" side="sl" part="case"/><lit-tag v="obj"/></equal>
+                <equal><clip pos="1" side="sl" part="case"/><lit-tag v="obj.ind"/></equal>
+                <equal><clip pos="1" side="sl" part="case"/><lit-tag v="obj.def"/></equal>
               </or>
             </test>
             <let><clip pos="1" side="tl" part="case"/><lit-tag v="acc"/></let>
         </when>
-        <when> <!-- Change +Ins to +ins -->
-            <test><equal><clip pos="1" side="sl" part="case"/><lit-tag v="Ins"/></equal></test>
-            <let><clip pos="1" side="tl" part="case"/><lit-tag v="ins"/></let>
-        </when>
         <when> <!-- Change +Abs to +nom -->
-            <test><equal><clip pos="1" side="sl" part="case"/><lit-tag v="Abs"/></equal></test>
+            <test><equal><clip pos="1" side="sl" part="case"/><lit-tag v="abs"/></equal></test>
             <let><clip pos="1" side="tl" part="case"/><lit-tag v="nom"/></let>
         </when>
     </choose>
 </def-macro>
+
+<def-macro n="set_default_tense_pattern1" npar="1" c="This is the default case tense/aspect/mood pattern.">
+    <choose>
+        <when> <!-- Change +Dur+Pres to +pres -->
+            <test>
+                <equal><clip pos="1" side="sl" part="temps"/><lit-tag v="dur.pres"/></equal>
+            </test>
+            <let><clip pos="1" side="tl" part="temps"/><lit-tag v="pres"/></let>
+        </when>
+    </choose>
+</def-macro>
+
 </section-def-macros>
 
 <section-rules>
@@ -165,6 +187,70 @@
        </out>
      </action>
   </rule>
+
+  <rule comment="regla: pron">
+     <pattern>
+       <pattern-item n="pron"/>
+     </pattern>
+     <action>
+       <call-macro n="set_default_case_pattern1">
+         <with-param pos="1"/>
+       </call-macro>
+       <out>
+         <chunk name="pron" case="caseFirstWord">
+           <tags>
+             <tag><lit-tag v="SN"/></tag>
+             <tag><clip pos="1" side="tl" part="prs"/></tag>
+             <tag><clip pos="1" side="tl" part="gen"/></tag>
+	     <tag><clip pos="1" side="tl" part="nbr"/></tag>
+	     <tag><clip pos="1" side="tl" part="case"/></tag>
+           </tags>
+           <lu>
+             <clip pos="1" side="tl" part="lemh"/>
+             <clip pos="1" side="tl" part="a_prn"/>
+             <clip pos="1" side="tl" part="prs" link-to="2"/>
+             <clip pos="1" side="tl" part="gen" link-to="3"/>
+             <lit-tag v="4"/>
+	     <clip pos="1" side="tl" part="case" link-to="5"/>
+             <clip pos="1" side="tl" part="lemq"/>
+           </lu>
+         </chunk>
+       </out>
+     </action>
+  </rule>
+
+  <rule comment="regla: finite verb">
+     <pattern>
+       <pattern-item n="vbfin"/>
+     </pattern>
+     <action>
+       <call-macro n="set_default_tense_pattern1">
+         <with-param pos="1"/>
+       </call-macro>
+       <out>
+         <chunk name="verb" case="caseFirstWord">
+           <tags>
+             <tag><lit-tag v="V"/></tag>
+             <tag><clip pos="1" side="tl" part="aspect"/></tag>
+             <tag><clip pos="1" side="tl" part="temps"/></tag>
+             <tag><clip pos="1" side="tl" part="prs"/></tag>
+	     <tag><clip pos="1" side="tl" part="nbr"/></tag>
+           </tags>
+           <lu>
+             <clip pos="1" side="tl" part="lemh"/>
+             <clip pos="1" side="tl" part="a_verb"/>
+             <clip pos="1" side="tl" part="aspect" link-to="2"/>
+             <clip pos="1" side="tl" part="temps" link-to="3"/>
+             <clip pos="1" side="tl" part="prs" link-to="4"/>
+	     <clip pos="1" side="tl" part="nbr" link-to="5"/>
+             <clip pos="1" side="tl" part="lemq"/>
+           </lu>
+         </chunk>
+       </out>
+     </action>
+  </rule>
+
+
 
 
 </section-rules>

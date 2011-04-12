@@ -2,66 +2,124 @@
   <alphabet/>
   <sdefs>
     <sdef n="n"        c="Noun"/>
-    <sdef n="N"        c="Noun"/>
     <sdef n="np"       c="Proper noun"/>
-    <sdef n="Prop"     c="Proper noun"/>
+    <sdef n="prn"      c="Pronoun"/>
+    <sdef n="post"     c="Postposition"/>
+    <sdef n="part"     c="Particle"/>
+    <sdef n="pr"       c="Preposition"/>
     <sdef n="num"      c="Numeral"/>
-    <sdef n="Num"      c="Numeral"/>
+    <sdef n="cnjcoo"   c="Coordinating conjunction"/>
+    <sdef n="cnjsub"   c="Subordinting conjunction"/>
 
     <sdef n="vbser"    c="Verb 'to be'"/>
-    <sdef n="V"        c="Verb"/>
+    <sdef n="vblex"    c="Verb"/>
+    <sdef n="v"        c="Verb"/>
 
-    <sdef n="Adv"      c="Adverb"/>
-    <sdef n="adv"      c="Adverb"/>
+    <sdef n="adj"      c="Adjective"/>
+
+    <sdef n="adv"      c="adverb"/>
+
+    <sdef n="p1"       c="First person"/>
+    <sdef n="p2"       c="Second person"/>
+    <sdef n="p3"       c="Third person"/>
 
     <sdef n="nt"       c="Neuter"/>
     <sdef n="f"        c="Feminine"/>
     <sdef n="m"        c="Masculine"/>
+    <sdef n="mf"       c="Masculine / feminine"/>
 
     <sdef n="nn"       c="Inanimate"/>
     <sdef n="aa"       c="Animate"/>
 
+    <sdef n="sg"       c="Singular"/>
+    <sdef n="pl"       c="Plural"/>
+
     <sdef n="al"       c="Other"/>
 
-    <sdef n="Abs"      c="Absolutive"/>
-    <sdef n="Ins"      c="Instrumental"/>
-    <sdef n="Obj"      c="Object"/>
+    <sdef n="abs"      c="Absolutive"/>
+    <sdef n="ins"      c="Instrumental"/>
+    <sdef n="obj"      c="Object"/>
 
-    <sdef n="Indef"    c="Indefinite"/>
+    <sdef n="ind"    c="Indefinite"/>
+    <sdef n="pers"     c="personal"/>
+
+    <sdef n="imperf"   c="Imperfective"/>
+    <sdef n="perf"     c="Perfective"/>
 
     <sdef n="GD"       c="Gender to be determined"/>
-    <sdef n="ND"       c="Number to be determined"/>
+    <sdef n="ND"       c="number to be determined"/>
 
-    <sdef n="CLB"      c="Clause level boundary"/>
+    <sdef n="clb"      c="Clause level boundary"/>
     <sdef n="sent"     c="End of sentence"/>
   </sdefs>
   <section id="main" type="standard">
+    <!-- SECTION: Conjunctions -->
+
+    <e c="  0"><p><l>тата<s n="cnjcoo"/></l><r>и<s n="cnjcoo"/></r></p></e>
+ 
+    <!-- SECTION: Postpositions -->
+    
+    <e c="  0"><p><l>валли<s n="post"/></l><r>для<s n="pr"/></r></p></e>
+ 
+    <!-- SECTION: Pronouns -->
+
+    <e c="  0"><p><l>епĕ<s n="prn"/><s n="pers"/><s n="p1"/><s n="sg"/></l><r>prpers<s n="prn"/><s n="p1"/><s n="mf"/><s n="sg"/></r></p></e>
+    <e c="  0"><p><l>есĕ<s n="prn"/><s n="pers"/><s n="p2"/><s n="sg"/></l><r>prpers<s n="prn"/><s n="p2"/><s n="mf"/><s n="sg"/></r></p></e>
+    <e c="  0"><p><l>вӑл<s n="prn"/><s n="pers"/><s n="p3"/><s n="sg"/></l><r>prpers<s n="prn"/><s n="p3"/><s n="GD"/><s n="sg"/></r></p></e>
+    <e c="  0"><p><l>епир<s n="prn"/><s n="pers"/><s n="p1"/><s n="pl"/></l><r>prpers<s n="prn"/><s n="p1"/><s n="mf"/><s n="pl"/></r></p></e>
+    <e c="  0"><p><l>есир<s n="prn"/><s n="pers"/><s n="p2"/><s n="pl"/></l><r>prpers<s n="prn"/><s n="p2"/><s n="mf"/><s n="pl"/></r></p></e>
+    <e c="  0"><p><l>вĕсем<s n="prn"/><s n="pers"/><s n="p3"/><s n="pl"/></l><r>prpers<s n="prn"/><s n="p3"/><s n="GD"/><s n="pl"/></r></p></e>
+
+    <!-- SECTION: Determiners -->
+
+    <!-- SECTION: Numerals -->
+
+    <e c="  0"><p><l>пĕр<s n="num"/></l><r>один<s n="num"/><s n="GD"/></r></p></e>
+    <e c="  0"><p><l>иккĕ<s n="num"/></l><r>два<s n="num"/><s n="GD"/></r></p></e>
+    <e c="  0"><p><l>пилĕк<s n="num"/></l><r>пять<s n="num"/><s n="GD"/></r></p></e>
 
     <!-- SECTION: Nouns -->
 
-    <e c="  0"><p><l>пĕр<s n="Num"/></l><r>один<s n="num"/><s n="GD"/></r></p></e>
-    <e c="  0"><p><l>пилĕк<s n="Num"/></l><r>пять<s n="num"/><s n="GD"/></r></p></e>
-
-    <!-- SECTION: Nouns -->
-
-    <e c="  0"><p><l>тӳпе<s n="N"/></l><r>небо<s n="n"/><s n="nt"/><s n="nn"/></r></p></e>
-    <e c="  0"><p><l>çĕре<s n="N"/></l><r>земля<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
+    <e c="  0"><p><l>тӳпе<s n="n"/></l><r>небо<s n="n"/><s n="nt"/><s n="nn"/></r></p></e>
+    <e c="  0"><p><l>атте<s n="n"/></l><r>отец<s n="n"/><s n="m"/><s n="aa"/></r></p></e>
+    <e c="  0"><p><l>пичче<s n="n"/></l><r>брать<s n="n"/><s n="m"/><s n="aa"/></r></p></e>
+    <e c="  0"><p><l>akka<s n="n"/></l><r>сестра<s n="n"/><s n="f"/><s n="aa"/></r></p></e>
+    <e c="  0"><p><l>çĕре<s n="n"/></l><r>земля<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
+    <e c="  0"><p><l>кĕнеке<s n="n"/></l><r>книга<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
+    <e c="  0"><p><l>завод<s n="n"/></l><r>завод<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
+    <e c="  0"><p><l>ав<s n="n"/></l><r>дом<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
+    <e c="  0"><p><l>тус<s n="n"/></l><r>друг<s n="n"/><s n="m"/><s n="aa"/></r></p></e>
+    <e c="  0"><p><l>шыв<s n="n"/></l><r>вода<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
+    <e c="  0"><p><l>ача<s n="n"/></l><r>мальчик<s n="n"/><s n="m"/><s n="aa"/></r></p></e>
+    <e c="  0"><p><l>фабрик<s n="n"/></l><r>фабрика<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
+    <e c="  0"><p><l>улма<s n="n"/></l><r>яблоко<s n="n"/><s n="nt"/><s n="nn"/></r></p></e>
+    <e c="  0"><p><l>ял<s n="n"/></l><r>деревня<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
+    <e c="  0"><p><l>чечек<s n="n"/></l><r>цвет<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
+    <e c="  0"><p><l>уй<s n="n"/></l><r>пол<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
+    <e c="  0"><p><l>шкап<s n="n"/></l><r>шкап<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
 
     <!-- SECTION: Proper nouns -->
 
-    <e c="  0"><p><l>Турӑ<s n="N"/><s n="Prop"/></l><r>Бог<s n="n"/><s n="m"/><s n="aa"/></r></p></e>
+    <e c="  0"><p><l>Турӑ<s n="np"/></l><r>Бог<s n="n"/><s n="m"/><s n="aa"/></r></p></e>
+
+    <!-- SECTION: Adjectives -->
+
+    <e c="  0"><p><l>шĕнĕ<s n="adj"/></l><r>новий<s n="adj"/></r></p></e>
 
     <!-- SECTION: Adverbs -->
 
-    <e c="  0"><p><l>пуçламӑшенче<s n="Adv"/></l><r>в<b/>начале<s n="adv"/></r></p></e>
+    <e c="  0"><p><l>пуçламӑшенче<s n="adv"/></l><r>в<b/>начале<s n="adv"/></r></p></e>
+    <e c="  0"><p><l>нумай<s n="adv"/></l><r>много<s n="adv"/></r></p></e>
+    <e c="  0"><p><l>киле<s n="adv"/></l><r>домой<s n="adv"/></r></p></e>
 
     <!-- SECTION: Verbs -->
 
-    <e c="  0"><p><l>пул<s n="V"/></l><r>быть<s n="vbser"/></r></p></e>
+    <e c="  0"><p><l>пул<s n="v"/></l><r>быть<s n="vbser"/></r></p></e>
+    <e c="  0"><p><l>тӑва<s n="v"/></l><r>строить<s n="vblex"/><s n="perf"/></r></p></e>
 
     <!-- SECTION: Punctuation -->
 
-    <e><re>[.!\?]</re><p><l><s n="CLB"/></l><r><s n="sent"/></r></p></e>
+    <e><re>[.!\?]</re><p><l><s n="clb"/></l><r><s n="sent"/></r></p></e>
 
   </section>
 </dictionary>
