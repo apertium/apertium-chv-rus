@@ -3,25 +3,53 @@ Multichar_Symbols
 ! Multichar symbols are enclosed in < > according to Apertium style, 
 ! archigraphemes are enclosed in { } according to Omorfi style
 
-%<n%> %<np%> %<v%> %<adv%> %<num%> %<adj%> %<prn%> %<post%>
-%<sg%> %<pl%>
-%<attr%> %<pred%>
-%<abs%> %<obj%> %<gen%> %<ins%> %<loc%> %<abl%> 
-%<pp%> %<pprs%> %<dur%> %<pres%>
-%<p1%>%<sg%> %<p2%>%<sg%> %<p3%>%<sg%> %<p1%>%<pl%> %<p2%>%<pl%> %<p3%>%<pl%>
-%<def%> %<ind%> %<pers%>
-%<top%>
-%<clb%> %<lquot%> %<rquot%>
-%<der‣caus%>
-%<cnjcoo%> %<cnjsub%>
-%<part%>
+%<n%>        ! Noun
+%<np%>       ! Proper noun
+%<v%>        ! Verb
+%<adv%>      ! Adverb
+%<num%>      ! Numeral
+%<adj%>      ! Adjective
+%<prn%>      ! Pronoun
+%<post%>     ! Postposition
+%<cnjcoo%>   ! Coordinating conjunction
+%<cnjsub%>   ! Subordinating conjunction
+%<part%>     ! Particle
 
-%>    ! Morpheme boundary
-%{а%} ! Archivowel: а or е 
-%{ӑ%} ! Archivowel: ӑ or ӗ
-%{р%} ! Archiconsonant: р оr т 
-%{н%} ! Archiconsonant: н or м 
-%{ь%} ! ь or ''
+%<der‣caus%> ! Derivation (V→V): Causative
+
+%<sg%>       ! Singular
+%<pl%>       ! Plural
+%<attr%>     ! Attributive
+%<pred%>     ! Predicative
+%<abs%>      ! Absolutive
+%<obj%>      ! Objective 
+%<gen%>      ! Genitive 
+%<ins%>      ! Instrumental 
+%<loc%>      ! Locative
+%<abl%>      ! Ablative
+%<pp%>       ! Past participle
+%<pprs%>     ! Present participle
+%<dur%>      ! Durative
+%<pres%>     ! Present
+%<p1%>       ! First person
+%<p2%>       ! Second person
+%<p3%>       ! Third person
+%<def%>      ! Definite
+%<ind%>      ! Indefinite
+%<pers%>     ! Personal
+%<top%>      ! Toponym
+
+%<clb%>      ! Clause level boundary
+%<lquot%>    ! Left quote 
+%<rquot%>    ! Right quote
+
+
+%>           ! Morpheme boundary
+%{а%}        ! Archivowel: а or е 
+%{ӑ%}        ! Archivowel: ӑ or ӗ
+%{р%}        ! Archiconsonant: р оr т 
+%{н%}        ! Archiconsonant: н or м 
+%{ь%}        ! ь or ''
 
 LEXICON Root
 
