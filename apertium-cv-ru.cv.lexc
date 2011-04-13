@@ -27,8 +27,6 @@ Multichar_Symbols
 %<ins%>      ! Instrumental 
 %<loc%>      ! Locative
 %<abl%>      ! Ablative
-%<pp%>       ! Past participle
-%<pprs%>     ! Present participle
 %<dur%>      ! Durative
 %<pres%>     ! Present
 %<p1%>       ! First person
@@ -38,6 +36,15 @@ Multichar_Symbols
 %<ind%>      ! Indefinite
 %<pers%>     ! Personal
 %<top%>      ! Toponym
+%<ant%>      ! Anthroponym 
+%<abbr%>     ! Abbreviation
+
+%<pp%>       ! Past participle
+%<pprs%>     ! Present participle
+%<fp%>       ! Future participle
+%<inf%>      ! Verbal noun / infinitive 
+%<conv%>     ! Converb 
+%<neg%>      ! Negative
 
 %<clb%>      ! Clause level boundary
 %<lquot%>    ! Left quote 
@@ -72,7 +79,23 @@ Punct ;
 LEXICON Decl1 
 
 %<abs%>: # ;
+
+! 1.  -ø          Optional with any stem
+! 2.  >Ăn         After polysyllabic consonant stems and vocalic stems in -U employing
+!                their stem alternant in -Ăv to replace U; some monosyllabic consonant
+!                stems
+! 3.  >n or >Ăn   After polysyllabic consonant stems except U and A
+! 4.  C¹C¹Ă>N     After polysyllabic vowel stems in >-C¹Ă
+! 5.  C¹C²Ă>n     After polysyllabic vowel stems in >-C¹C²Ă
+! 6.  C¹>Ǎn       After borrowed polysyllabic stems in C¹C¹
+! 7.  C¹C¹>Ăn     After some monosyllabic stems in C¹
+! 8.  >n or >jěn  After native and foreign stems in -i
+! 9.  -ă>n        After borrowed vowel stems in -a, -ja, -e, -u and some in -o
+! 10. -o>n        After some borrowed vowel stems in -o
+! 11. -s>ăn       After borrowed stems in -st'      
+
 %<gen%>:%>%{а%}н # ;        ! 
+
 %<obj%>%<ind%>: # ;          ! 
 %<obj%>%<def%>:%>%{а%} # ;          ! 
 %<loc%>:%>%{р%}%{а%} # ;        ! 
@@ -92,9 +115,13 @@ LEXICON Nprop
 
 %<np%>: Decl1 ;
 
-LEXICON Ntop
+LEXICON NP-TOP
 
 %<np%>%<top%>: Decl1 ;
+
+LEXICON NP-ANT-MSC 
+
+%<np%>%<ant%>%<m%>: Decl1 ;
 
 LEXICON NUMshort
 
@@ -103,6 +130,11 @@ LEXICON NUMshort
 LEXICON NUMlong
 
 %<num%>%<pred%>: # ;
+
+LEXICON NUM-ABBR
+
+%<num%>%<abbr%>: # ;
+
 
 LEXICON ADV 
 
@@ -132,21 +164,55 @@ LEXICON PART
 
 %<part%>: # ; 
 
-LEXICON Vconj
+LEXICON V-PRES-CONJ
 
-%<pprs%>:%>к%{а%}н Decl1 ;
-%<pp%>:%>н%{ӑ%} # ;
 %<dur%>%<pres%>%<p1%>%<sg%>:%>т%{ӑ%}р # ;
 %<dur%>%<pres%>%<p2%>%<sg%>:%>т%{ӑ%}н # ; 
 %<dur%>%<pres%>%<p3%>%<sg%>:%>т%{ь%} # ;
 %<dur%>%<pres%>%<p1%>%<pl%>:%>тп%{ӑ%}р # ;
 %<dur%>%<pres%>%<p2%>%<pl%>:%>т%{ӑ%}р # ; 
 %<dur%>%<pres%>%<p3%>%<pl%>:%>шшӗ # ;
+
+LEXICON C-PRES-CONJ
+
+%<dur%>%<pres%>%<p1%>%<sg%>:%>%{а%}т%{ӑ%}р # ;
+%<dur%>%<pres%>%<p2%>%<sg%>:%>%{а%}т%{ӑ%}н # ; 
+%<dur%>%<pres%>%<p3%>%<sg%>:%>%{а%}т%{ь%} # ;
+%<dur%>%<pres%>%<p1%>%<pl%>:%>%{а%}тп%{ӑ%}р # ;
+%<dur%>%<pres%>%<p2%>%<pl%>:%>%{а%}т%{ӑ%}р # ; 
+%<dur%>%<pres%>%<p3%>%<pl%>:%>^{а%}шшӗ # ;
+
+LEXICON V-STEM-CONJ
+
+%<pprs%>:%>к%{а%}н Decl1 ;
+%<pp%>:%>н%{ӑ%} # ;
+%<fp%>:%>%{а%}с # ;
+%<inf%>:%>м%{а%} # ;
+%<conv%>:%>с%{а%} # ;
+%<neg%>:%>м%{а%}с V-PRES-CONJ ;
+
 !%<der‣caus%>%<v%>:%>тар Vreg ; 
 
-LEXICON Vreg
+LEXICON C-STEM-CONJ
 
-%<v%>: Vconj ;
+%<pprs%>:%>к%{а%}н Decl1 ;
+%<pp%>:%>н%{ӑ%} # ;
+%<fp%>:%>%{а%}с # ;
+%<inf%>:%>м%{а%} # ;
+%<conv%>:%>с%{а%} # ;
+%<neg%>:%>м%{а%}с C-PRES-CONJ ;
+C-PRES-CONJ ; 
+
+!%<der‣caus%>%<v%>:%>тар Vreg ; 
+
+
+LEXICON V-STEM-V-REG
+
+%<v%>: V-STEM-CONJ ;
+
+LEXICON C-STEM-V-REG
+
+%<v%>: C-STEM-CONJ ;
 
 LEXICON Pronouns 
 
@@ -210,27 +276,33 @@ LEXICON Numerals
 пилĕк NUMshort ;
 пилĕк:пиллĕк NUMlong ;
 
+млн%.:млн%. NUM-ABBR ;
+
 LEXICON AdjStems
 
 шĕнĕ ADJ ;
 
 LEXICON NominalStems
 
-тӳпе Nreg ;
-çĕре Nreg ; 
 завод Nreg ; 
 фабрик Nreg ; 
+католик Nreg ; 
 кун Nreg ;
-ту Nreg ;
-ача Nreg ;
 чечек Nreg ; 
+
+тӳпе Nreg ;
+çĕре Nreg ; 
+ту Nreg ;
 уй Nreg ;
+ача Nreg ;
 кĕнеке Nreg ;
 
 LEXICON ProperNouns
 
 Турӑ Nprop ; 
-Шупашкар Ntop ; 
+Шупашкар N-TOP ; 
+Мадрид N-TOP ; 
+Петĕр NP-ANT-MSC ; 
 
 LEXICON Adverbs
 
@@ -263,10 +335,19 @@ LEXICON Particles
 
 LEXICON VerbStems 
 
-пул Vreg ;
-кил Vreg ;
-тӑва Vreg ;
-ил Vreg ;
+пул C-STEM-V-REG ;
+кил C-STEM-V-REG ;
+ил C-STEM-V-REG ;
+сыp C-STEM-V-REG ;
+тух C-STEM-V-REG ;
+тӑва V-STEM-V-REG ;
+кая V-STEM-V-REG ;
+сывла V-STEM-V-REG ;
+вула V-STEM-V-REG ;
+ĕçле V-STEM-V-REG ;
+
+пырса% кала V-STEM-V-REG ;
+тухса% кай C-STEM-V-REG ;
 
 LEXICON Punct
 
