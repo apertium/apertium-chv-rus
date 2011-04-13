@@ -1,10 +1,10 @@
-Пуҫламӑшенче Турӑ тӳпепе ҫĕре пултарнӑ.
-puşlamӑš+N+Pl+Loc    Turӑ+N+Prop+Nom   tüpe+N+Ins   şĕr+N+Obj   pul+V+Caus+PrfPrc
+Пуҫламӑшенче Турӑ тӳпепе ҫӗре пултарнӑ.
+puşlamӑš+N+Pl+Loc    Turӑ+N+Prop+Nom   tüpe+N+Ins   şӗr+N+Obj   pul+V+Caus+PrfPrc
 
 В начале сотворил Бог небо и землю.
 
-Епир нумай шĕнĕ заводсем, фабриксем тӑватпӑр.
-epir numaj şĕnĕ zavodsem, fabriksem tăvatpăr.
+Епир нумай шӗнӗ заводсем, фабриксем тӑватпӑр.
+epir numaj şӗnӗ zavodsem, fabriksem tăvatpăr.
 
 We  many   new  plants, factories we.are.building.
 
@@ -17,22 +17,22 @@ udarniksene premi pană
 
 shock.workers.to prizes they.give
 
-Петĕре кĕнеке кирлĕ пулнӑ.
-Petĕre kĕneke kirlĕ pulnă
+Петӗре кӗнеке кирлӗ пулнӑ.
+Petӗre kӗneke kirlӗ pulnă
 
 Peter.to book needed is 
 
-epir irpe Shupashkara şitrĕmĕr
+epir irpe Shupashkara şitrӗmӗr
 
 We in.the.morning Shupashkar.to came
 
 
 Ачасем уйран чечексем таца килчӗҫ.
-achasem ujran checheksem tatsa kilchĕş
+achasem ujran checheksem tatsa kilchӗş
 
 the boys field.from flowers pick.COV came
 
 
-pirĕn pattăr pogranichniksem kunĕn-şĕrĕn tĕrlĕ tăshmansenchen granitsăsene syhlaşşĕ
+pirӗn pattăr pogranichniksem kunӗn-şӗrӗn tӗrlӗ tăshmansenchen granitsăsene syhlaşşӗ
 
 
