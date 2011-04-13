@@ -1,4 +1,4 @@
-Пуçламӑшенче Турӑ тӳпепе çĕре пултарнӑ.
+Пуҫламӑшенче Турӑ тӳпепе ҫĕре пултарнӑ.
 puşlamӑš+N+Pl+Loc    Turӑ+N+Prop+Nom   tüpe+N+Ins   şĕr+N+Obj   pul+V+Caus+PrfPrc
 
 В начале сотворил Бог небо и землю.
@@ -27,7 +27,7 @@ epir irpe Shupashkara şitrĕmĕr
 We in.the.morning Shupashkar.to came
 
 
-Ачасем уйран чечексем таца килчӗç.
+Ачасем уйран чечексем таца килчӗҫ.
 achasem ujran checheksem tatsa kilchĕş
 
 the boys field.from flowers pick.COV came

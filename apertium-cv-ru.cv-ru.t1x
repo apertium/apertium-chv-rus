@@ -5,7 +5,10 @@
   <def-cat n="pron">
      <cat-item tags="prn.*"/>
   </def-cat>
-
+  <def-cat n="coverb">
+     <cat-item tags="v.conv"/>
+     <cat-item tags="v.conv.*"/>
+  </def-cat>
   <def-cat n="nom">
      <cat-item tags="n.*"/>
      <cat-item tags="np.*"/>
@@ -13,6 +16,9 @@
 
   <def-cat n="vbfin">
      <cat-item tags="v.dur.*"/>
+  </def-cat>
+  <def-cat n="vbfinpast">
+     <cat-item tags="v.past.*"/>
   </def-cat>
 
   <def-cat n="vblex">
@@ -71,6 +77,7 @@
   <def-attr n="temps">
      <attr-item tags="dur.pres"/>
      <attr-item tags="pres"/>
+     <attr-item tags="past"/>
   </def-attr>
 
   <def-attr n="nbr">
@@ -146,6 +153,17 @@
             </test>
             <let><clip pos="1" side="tl" part="temps"/><lit-tag v="pres"/></let>
         </when>
+        <when> <!-- Remove person from past tense -->
+            <test>
+              <and>
+                <equal><clip pos="1" side="sl" part="temps"/><lit-tag v="past"/></equal>
+                <equal><clip pos="1" side="sl" part="nbr"/><lit-tag v="pl"/></equal>
+              </and>
+            </test>
+            <let><clip pos="1" side="tl" part="prs"/><lit v=""/></let>
+            <let><var n="genere"/><lit-tag v="mfn"/></let>
+        </when>
+
     </choose>
 </def-macro>
 
@@ -249,6 +267,87 @@
        </out>
      </action>
   </rule>
+
+  <rule comment="regla: finite verb past">
+     <pattern>
+       <pattern-item n="vbfinpast"/>
+     </pattern>
+     <action>
+       <call-macro n="set_default_tense_pattern1">
+         <with-param pos="1"/>
+       </call-macro>
+       <out>
+         <chunk name="verb" case="caseFirstWord">
+           <tags>
+             <tag><lit-tag v="V"/></tag>
+             <tag><clip pos="1" side="tl" part="aspect"/></tag>
+             <tag><clip pos="1" side="tl" part="temps"/></tag>
+             <tag><var n="genere"/></tag>
+	     <tag><clip pos="1" side="tl" part="nbr"/></tag>
+           </tags>
+           <lu>
+             <clip pos="1" side="tl" part="lemh"/>
+             <clip pos="1" side="tl" part="a_verb"/>
+             <clip pos="1" side="tl" part="aspect" link-to="2"/>
+             <clip pos="1" side="tl" part="temps" link-to="3"/>
+             <lit-tag v="4"/>
+	     <clip pos="1" side="tl" part="nbr" link-to="5"/>
+             <clip pos="1" side="tl" part="lemq"/>
+           </lu>
+         </chunk>
+       </out>
+     </action>
+  </rule>
+
+
+
+  <rule comment="regla: coverb + finite verb past">
+     <pattern>
+       <pattern-item n="coverb"/>
+       <pattern-item n="vbfinpast"/>
+     </pattern>
+     <action>
+       <call-macro n="set_default_tense_pattern1">
+         <with-param pos="2"/>
+       </call-macro>
+       <out>
+         <chunk name="coverb_verb" case="caseFirstWord">
+           <tags>
+             <tag><lit-tag v="V"/></tag>
+             <tag><clip pos="2" side="tl" part="aspect"/></tag>
+             <tag><clip pos="2" side="tl" part="temps"/></tag>
+             <tag><var n="genere"/></tag>
+	     <tag><clip pos="2" side="tl" part="nbr"/></tag>
+           </tags>
+           <lu>
+             <clip pos="1" side="tl" part="lemh"/>
+             <clip pos="1" side="tl" part="a_verb"/>
+             <clip pos="1" side="tl" part="aspect" link-to="2"/>
+             <clip pos="2" side="tl" part="temps" link-to="3"/>
+             <lit-tag v="4"/>
+	     <clip pos="2" side="tl" part="nbr" link-to="5"/>
+             <clip pos="1" side="tl" part="lemq"/>
+           </lu>
+           <b/>
+           <lu>
+             <lit v="и"/>
+             <lit-tag v="cnjcoo"/>
+           </lu>
+           <b pos="1"/>
+           <lu>
+             <clip pos="2" side="tl" part="lemh"/>
+             <clip pos="2" side="tl" part="a_verb"/>
+             <clip pos="2" side="tl" part="aspect" link-to="2"/>
+             <clip pos="2" side="tl" part="temps" link-to="3"/>
+             <lit-tag v="4"/>
+	     <clip pos="2" side="tl" part="nbr" link-to="5"/>
+             <clip pos="2" side="tl" part="lemq"/>
+           </lu>
+         </chunk>
+       </out>
+     </action>
+  </rule>
+
 
 
 

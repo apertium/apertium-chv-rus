@@ -125,7 +125,9 @@
     <!-- SECTION: Verbs -->
 
     <e c="  0"><p><l>пул<s n="v"/></l><r>быть<s n="vbser"/></r></p></e>
-    <e c="  0"><p><l>тӑва<s n="v"/></l><r>строить<s n="vblex"/><s n="perf"/></r></p></e>
+    <e c="  0"><p><l>тӑва<s n="v"/></l><r>строить<s n="vblex"/><s n="imperf"/></r></p></e>
+    <e c="  0"><p><l>тат<s n="v"/></l><r>собирать<s n="vblex"/><s n="imperf"/></r></p></e>
+    <e c="  0"><p><l>кил<s n="v"/></l><r>приходить<s n="vblex"/><s n="imperf"/></r></p></e>
 
     <!-- SECTION: Punctuation -->
 
