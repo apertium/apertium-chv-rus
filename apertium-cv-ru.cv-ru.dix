@@ -17,7 +17,7 @@
 
     <sdef n="adj"      c="Adjective"/>
 
-    <sdef n="adv"      c="adverb"/>
+    <sdef n="adv"      c="Adverb"/>
 
     <sdef n="p1"       c="First person"/>
     <sdef n="p2"       c="Second person"/>
@@ -63,20 +63,20 @@
  
     <!-- SECTION: Pronouns -->
 
-    <e c="  0"><p><l>епĕ<s n="prn"/><s n="pers"/><s n="p1"/><s n="sg"/></l><r>prpers<s n="prn"/><s n="p1"/><s n="mf"/><s n="sg"/></r></p></e>
-    <e c="  0"><p><l>есĕ<s n="prn"/><s n="pers"/><s n="p2"/><s n="sg"/></l><r>prpers<s n="prn"/><s n="p2"/><s n="mf"/><s n="sg"/></r></p></e>
+    <e c="  0"><p><l>епӗ<s n="prn"/><s n="pers"/><s n="p1"/><s n="sg"/></l><r>prpers<s n="prn"/><s n="p1"/><s n="mf"/><s n="sg"/></r></p></e>
+    <e c="  0"><p><l>есӗ<s n="prn"/><s n="pers"/><s n="p2"/><s n="sg"/></l><r>prpers<s n="prn"/><s n="p2"/><s n="mf"/><s n="sg"/></r></p></e>
     <e c="  0"><p><l>вӑл<s n="prn"/><s n="pers"/><s n="p3"/><s n="sg"/></l><r>prpers<s n="prn"/><s n="p3"/><s n="GD"/><s n="sg"/></r></p></e>
     <e c="  0"><p><l>епир<s n="prn"/><s n="pers"/><s n="p1"/><s n="pl"/></l><r>prpers<s n="prn"/><s n="p1"/><s n="mf"/><s n="pl"/></r></p></e>
     <e c="  0"><p><l>есир<s n="prn"/><s n="pers"/><s n="p2"/><s n="pl"/></l><r>prpers<s n="prn"/><s n="p2"/><s n="mf"/><s n="pl"/></r></p></e>
-    <e c="  0"><p><l>вĕсем<s n="prn"/><s n="pers"/><s n="p3"/><s n="pl"/></l><r>prpers<s n="prn"/><s n="p3"/><s n="GD"/><s n="pl"/></r></p></e>
+    <e c="  0"><p><l>вӗсем<s n="prn"/><s n="pers"/><s n="p3"/><s n="pl"/></l><r>prpers<s n="prn"/><s n="p3"/><s n="GD"/><s n="pl"/></r></p></e>
 
     <!-- SECTION: Determiners -->
 
     <!-- SECTION: Numerals -->
 
-    <e c="  0"><p><l>пĕр<s n="num"/></l><r>один<s n="num"/><s n="GD"/></r></p></e>
-    <e c="  0"><p><l>иккĕ<s n="num"/></l><r>два<s n="num"/><s n="GD"/></r></p></e>
-    <e c="  0"><p><l>пилĕк<s n="num"/></l><r>пять<s n="num"/><s n="GD"/></r></p></e>
+    <e c="  0"><p><l>пӗр<s n="num"/></l><r>один<s n="num"/><s n="GD"/></r></p></e>
+    <e c="  0"><p><l>иккӗ<s n="num"/></l><r>два<s n="num"/><s n="GD"/></r></p></e>
+    <e c="  0"><p><l>пилӗк<s n="num"/></l><r>пять<s n="num"/><s n="GD"/></r></p></e>
 
     <!-- SECTION: Nouns -->
 
@@ -86,9 +86,9 @@
     <e c="  0"><p><l>пичче<s n="n"/></l><r>брать<s n="n"/><s n="m"/><s n="aa"/></r></p></e>
     <e c="  0"><p><l>брать<s n="n"/></l><r>брать<s n="n"/><s n="m"/><s n="aa"/></r></p></e> <!-- @L -->
     <e c="  0"><p><l>акка<s n="n"/></l><r>сестра<s n="n"/><s n="f"/><s n="aa"/></r></p></e>
-    <e c="  0"><p><l>çĕре<s n="n"/></l><r>земля<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
-    <e c="  0"><p><l>ĕçлекен<s n="n"/></l><r>работник<s n="n"/><s n="m"/><s n="aa"/></r></p></e> <!-- @C -->
-    <e c="  0"><p><l>кĕнеке<s n="n"/></l><r>книга<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
+    <e c="  0"><p><l>çӗре<s n="n"/></l><r>земля<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
+    <e c="  0"><p><l>ӗçлекен<s n="n"/></l><r>работник<s n="n"/><s n="m"/><s n="aa"/></r></p></e> <!-- @C -->
+    <e c="  0"><p><l>кӗнеке<s n="n"/></l><r>книга<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
     <e c="  0"><p><l>завод<s n="n"/></l><r>завод<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
     <e c="  0"><p><l>ав<s n="n"/></l><r>дом<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
     <e c="  0"><p><l>пӳрт<s n="n"/></l><r>дом<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
@@ -105,6 +105,8 @@
     <e c="  0"><p><l>шкап<s n="n"/></l><r>шкап<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
     <e c="  0"><p><l>трактор<s n="n"/></l><r>трактор<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
     <e c="  0"><p><l>кино<s n="n"/></l><r>кино<s n="n"/><s n="nt"/><s n="nn"/></r></p></e>
+    <e c="  0"><p><l>çурçӗр<s n="n"/></l><r>север<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
+    <e c="  0"><p><l>кӑнтӑр<s n="n"/></l><r>юг<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
 
     <!-- SECTION: Proper nouns -->
 
@@ -112,7 +114,7 @@
 
     <!-- SECTION: Adjectives -->
 
-    <e c="  0"><p><l>шĕнĕ<s n="adj"/></l><r>новий<s n="adj"/></r></p></e>
+    <e c="  0"><p><l>шӗнӗ<s n="adj"/></l><r>новий<s n="adj"/></r></p></e>
 
     <!-- SECTION: Adverbs -->
 
