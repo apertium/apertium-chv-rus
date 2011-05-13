@@ -1,3 +1,7 @@
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!   M O R P H O L O G I C A L · T R A N S D U C E R · F O R · C H U V A S H !!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
 Multichar_Symbols
 
 ! Multichar symbols are enclosed in < > according to Apertium style, 
@@ -9,6 +13,7 @@ Multichar_Symbols
 %<adv%>      ! Adverb
 %<num%>      ! Numeral
 %<adj%>      ! Adjective
+%<ij%>       ! Interjection
 %<prn%>      ! Pronoun
 %<post%>     ! Postposition
 %<cnjcoo%>   ! Coordinating conjunction
@@ -77,11 +82,13 @@ Adverbs ;
 Postpos ; 
 Particles ; 
 Conjunctions ; 
+Interjections ; 
 Punct ; 
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-! Paradigms 
+!!!                  C O N T I N U A T I O N      L E X I C A               !!!
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
 
 LEXICON NOM-DECL-C
 
@@ -346,9 +353,8 @@ LEXICON Pronouns
 
 
 
-
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-! Entries 
+!!!                  L E X I C O N    E N T R I E S                         !!!
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 LEXICON Numerals
@@ -393,12 +399,16 @@ LEXICON NominalStems
 LEXICON ProperNouns
 
 Турӑ NP-V ; 
-Шупашкар N-TOP-C ; 
-Мадрид N-TOP-C ; 
-Любляна N-TOP-V ; 
-Мускав N-TOP-C ; 
+Шупашкар NP-TOP-C ; 
+Мадрид NP-TOP-C ; 
+Любляна NP-TOP-V ; 
+Мускав NP-TOP-C ; 
 Петӗр NP-ANT-MSC-C ; 
+Иван NP-ANT-MSC-C ; 
+Владимир NP-ANT-MSC-C ; 
 Марина NP-ANT-FEM-V ; 
+Ирина NP-ANT-FEM-V ; 
+Яна NP-ANT-FEM-V ; 
 
 LEXICON Adverbs
 
@@ -458,6 +468,10 @@ LEXICON VerbStems
 
 пырса% кала V-STEM-V-REG ;
 тухса% кай C-STEM-V-REG ;
+
+LEXICON Interjections 
+
+пысак% тавтапуҫ%<ij%>:пысак% тавтапуҫ # ;
 
 LEXICON Punct
 

@@ -7,6 +7,7 @@
     <sdef n="post"     c="Postposition"/>
     <sdef n="part"     c="Particle"/>
     <sdef n="pr"       c="Preposition"/>
+    <sdef n="ij"       c="Interjection"/>
     <sdef n="num"      c="Numeral"/>
     <sdef n="cnjcoo"   c="Coordinating conjunction"/>
     <sdef n="cnjsub"   c="Subordinting conjunction"/>
@@ -129,6 +130,9 @@
     <e c="  0"><p><l>тат<s n="v"/></l><r>собирать<s n="vblex"/><s n="imperf"/></r></p></e>
     <e c="  0"><p><l>кил<s n="v"/></l><r>приходить<s n="vblex"/><s n="imperf"/></r></p></e>
 
+    <!-- SECTION: Interjections -->
+
+    <e c="  0"><p><l>пысак<b/>тавтапущ<s n="ij"/></l><r>большое<b/>спасибо<s n="ij"/></r></p></e>
     <!-- SECTION: Punctuation -->
 
     <e><re>[.!\?]</re><p><l><s n="clb"/></l><r><s n="sent"/></r></p></e>
