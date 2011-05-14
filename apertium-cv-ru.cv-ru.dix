@@ -29,6 +29,8 @@
     <sdef n="m"        c="Masculine"/>
     <sdef n="mf"       c="Masculine / feminine"/>
 
+    <sdef n="ant"      c="Antroponym"/>
+
     <sdef n="nn"       c="Inanimate"/>
     <sdef n="aa"       c="Animate"/>
 
@@ -67,7 +69,7 @@
     <e c="  0"><p><l>епӗ<s n="prn"/><s n="pers"/><s n="p1"/><s n="sg"/></l><r>prpers<s n="prn"/><s n="p1"/><s n="mf"/><s n="sg"/></r></p></e>
     <e c="  0"><p><l>есӗ<s n="prn"/><s n="pers"/><s n="p2"/><s n="sg"/></l><r>prpers<s n="prn"/><s n="p2"/><s n="mf"/><s n="sg"/></r></p></e>
     <e c="  0"><p><l>вӑл<s n="prn"/><s n="pers"/><s n="p3"/><s n="sg"/></l><r>prpers<s n="prn"/><s n="p3"/><s n="GD"/><s n="sg"/></r></p></e>
-    <e c="  0"><p><l>епир<s n="prn"/><s n="pers"/><s n="p1"/><s n="pl"/></l><r>prpers<s n="prn"/><s n="p1"/><s n="mf"/><s n="pl"/></r></p></e>
+    <e c="  0"><p><l>эпир<s n="prn"/><s n="pers"/><s n="p1"/><s n="pl"/></l><r>prpers<s n="prn"/><s n="p1"/><s n="mf"/><s n="pl"/></r></p></e>
     <e c="  0"><p><l>есир<s n="prn"/><s n="pers"/><s n="p2"/><s n="pl"/></l><r>prpers<s n="prn"/><s n="p2"/><s n="mf"/><s n="pl"/></r></p></e>
     <e c="  0"><p><l>вӗсем<s n="prn"/><s n="pers"/><s n="p3"/><s n="pl"/></l><r>prpers<s n="prn"/><s n="p3"/><s n="GD"/><s n="pl"/></r></p></e>
 
@@ -112,16 +114,19 @@
     <!-- SECTION: Proper nouns -->
 
     <e c="  0"><p><l>Турӑ<s n="np"/></l><r>Бог<s n="n"/><s n="m"/><s n="aa"/></r></p></e>
+    <e c="  0"><p><l>Петӗр<s n="np"/><s n="ant"/><s n="m"/></l><r>Петӗр<s n="np"/><s n="ant"/><s n="m"/></r></p></e>
 
     <!-- SECTION: Adjectives -->
 
     <e c="  0"><p><l>шӗнӗ<s n="adj"/></l><r>новий<s n="adj"/></r></p></e>
+    <e c="  0"><p><l>хавас<s n="adj"/></l><r>рад<s n="adj"/></r></p></e>
 
     <!-- SECTION: Adverbs -->
 
     <e c="  0"><p><l>пуçламӑшенче<s n="adv"/></l><r>в<b/>начале<s n="adv"/></r></p></e>
     <e c="  0"><p><l>нумай<s n="adv"/></l><r>много<s n="adv"/></r></p></e>
     <e c="  0"><p><l>киле<s n="adv"/></l><r>домой<s n="adv"/></r></p></e>
+    <e c="  0"><p><l>пите<s n="adv"/></l><r>очень<s n="adv"/></r></p></e>
 
     <!-- SECTION: Verbs -->
 
@@ -129,6 +134,7 @@
     <e c="  0"><p><l>тӑва<s n="v"/></l><r>строить<s n="vblex"/><s n="imperf"/></r></p></e>
     <e c="  0"><p><l>тат<s n="v"/></l><r>собирать<s n="vblex"/><s n="imperf"/></r></p></e>
     <e c="  0"><p><l>кил<s n="v"/></l><r>приходить<s n="vblex"/><s n="imperf"/></r></p></e>
+    <e c="  0"><p><l>кур<s n="v"/></l><r>видеть<s n="vblex"/><s n="imperf"/></r></p></e>
 
     <!-- SECTION: Interjections -->
 

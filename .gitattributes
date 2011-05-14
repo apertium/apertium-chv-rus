@@ -6,7 +6,6 @@
 /apertium-cv-ru.cv-ru.t2x -text
 /apertium-cv-ru.cv-ru.t3x -text
 /apertium-cv-ru.cv.lexc -text
-/apertium-cv-ru.cv.relabel -text
 /apertium-cv-ru.cv.twol -text
 /cv-ru.prob -text
 dev/test-sentences.txt -text

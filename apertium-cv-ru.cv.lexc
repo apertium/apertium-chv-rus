@@ -306,12 +306,12 @@ LEXICON Pronouns
 вӑл%<prn%>%<pers%>%<p3%>%<sg%>%<abl%>:унран # ;
 вӑл%<prn%>%<pers%>%<p3%>%<sg%>%<ins%>:унпа # ;
 
-епир%<prn%>%<pers%>%<p1%>%<pl%>%<abs%>:епир #;
-епир%<prn%>%<pers%>%<p1%>%<pl%>%<obj%>:пире #;
-епир%<prn%>%<pers%>%<p1%>%<pl%>%<gen%>:пирӗн #;
-епир%<prn%>%<pers%>%<p1%>%<pl%>%<loc%>:пирӗнте #;
-епир%<prn%>%<pers%>%<p1%>%<pl%>%<abl%>:пирӗнтен #;
-епир%<prn%>%<pers%>%<p1%>%<pl%>%<ins%>:пирӗнпе #;
+эпир%<prn%>%<pers%>%<p1%>%<pl%>%<abs%>:эпир #;
+эпир%<prn%>%<pers%>%<p1%>%<pl%>%<obj%>:пире #;
+эпир%<prn%>%<pers%>%<p1%>%<pl%>%<gen%>:пирӗн #;
+эпир%<prn%>%<pers%>%<p1%>%<pl%>%<loc%>:пирӗнте #;
+эпир%<prn%>%<pers%>%<p1%>%<pl%>%<abl%>:пирӗнтен #;
+эпир%<prn%>%<pers%>%<p1%>%<pl%>%<ins%>:пирӗнпе #;
 
 есир%<prn%>%<pers%>%<p2%>%<pl%>%<abs%>:есир #;
 есир%<prn%>%<pers%>%<p2%>%<pl%>%<obj%>:сире #;
@@ -370,6 +370,7 @@ LEXICON Numerals
 LEXICON AdjStems
 
 шӗнӗ ADJ ;
+хавас ADJ ;
 
 LEXICON NominalStems
 
@@ -385,6 +386,8 @@ LEXICON NominalStems
 ҫурҫӗр NOM-C-REG ; 
 кӑнтӑр NOM-C-REG ; 
 департамент NOM-C-REG ; 
+хавас NOM-C-REG ; 
+ударник NOM-C-REG ; 
 
 ҫӗре NOM-V-REG ; 
 ача NOM-V-REG ;
@@ -395,6 +398,7 @@ LEXICON NominalStems
 уй NOM-V-REG ;
 чикӗ NOM-V-REG ;
 фонетика NOM-V-REG ;
+курма NOM-V-REG ;
 
 LEXICON ProperNouns
 
@@ -416,6 +420,7 @@ LEXICON Adverbs
 нумай ADV ;
 киле ADV ;
 каҫпа ADV ;
+пите ADV ;
 кунӗпа ADV ;
 паян ADV ;
 ернипе ADV ;
@@ -457,6 +462,7 @@ LEXICON VerbStems
 туп C-STEM-V-REG ;
 тат C-STEM-V-REG ;
 юх C-STEM-V-REG ;
+кур C-STEM-V-REG ; ! "видеть"
 
 тӑва V-STEM-V-REG ;
 кая V-STEM-V-REG ;
