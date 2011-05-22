@@ -224,7 +224,7 @@ LEXICON V-PRES-CONJ
 %<dur%>%<pres%>%<p3%>%<sg%>:%>т%{ь%} # ;
 %<dur%>%<pres%>%<p1%>%<pl%>:%>тп%{ӑ%}р # ;
 %<dur%>%<pres%>%<p2%>%<pl%>:%>т%{ӑ%}р # ; 
-%<dur%>%<pres%>%<p3%>%<pl%>:%>шшӗ # ;
+%<dur%>%<pres%>%<p3%>%<pl%>:%>ҫҫӗ # ;
 
 LEXICON C-PRES-CONJ
 
@@ -233,7 +233,7 @@ LEXICON C-PRES-CONJ
 %<dur%>%<pres%>%<p3%>%<sg%>:%>%{а%}т%{ь%} # ;
 %<dur%>%<pres%>%<p1%>%<pl%>:%>%{а%}тп%{ӑ%}р # ;
 %<dur%>%<pres%>%<p2%>%<pl%>:%>%{а%}т%{ӑ%}р # ; 
-%<dur%>%<pres%>%<p3%>%<pl%>:%>%{а%}шшӗ # ;
+%<dur%>%<pres%>%<p3%>%<pl%>:%>%{а%}ҫҫӗ # ;
 
 LEXICON C-PAST-CONJ
 
@@ -313,12 +313,12 @@ LEXICON Pronouns
 эпир%<prn%>%<pers%>%<p1%>%<pl%>%<abl%>:пирӗнтен #;
 эпир%<prn%>%<pers%>%<p1%>%<pl%>%<ins%>:пирӗнпе #;
 
-есир%<prn%>%<pers%>%<p2%>%<pl%>%<abs%>:есир #;
-есир%<prn%>%<pers%>%<p2%>%<pl%>%<obj%>:сире #;
-есир%<prn%>%<pers%>%<p2%>%<pl%>%<gen%>:сирӗн #;
-есир%<prn%>%<pers%>%<p2%>%<pl%>%<loc%>:сирӗнте #;
-есир%<prn%>%<pers%>%<p2%>%<pl%>%<abl%>:сирӗнтен #;
-есир%<prn%>%<pers%>%<p2%>%<pl%>%<ins%>:сирӗнпе #;
+эсир%<prn%>%<pers%>%<p2%>%<pl%>%<abs%>:эсир #;
+эсир%<prn%>%<pers%>%<p2%>%<pl%>%<obj%>:сире #;
+эсир%<prn%>%<pers%>%<p2%>%<pl%>%<gen%>:сирӗн #;
+эсир%<prn%>%<pers%>%<p2%>%<pl%>%<loc%>:сирӗнте #;
+эсир%<prn%>%<pers%>%<p2%>%<pl%>%<abl%>:сирӗнтен #;
+эсир%<prn%>%<pers%>%<p2%>%<pl%>%<ins%>:сирӗнпе #;
 
 вӗсем%<prn%>%<pers%>%<p3%>%<pl%>%<abs%>:вӗсем #;
 вӗсем%<prn%>%<pers%>%<p3%>%<pl%>%<obj%>:вӗсен #;
@@ -454,12 +454,13 @@ LEXICON Particles
 
 LEXICON VerbStems 
 
-пул C-STEM-V-REG ;
-кил C-STEM-V-REG ;
+пул C-STEM-V-REG ; 
+кил C-STEM-V-REG ; ! "идти, ехать"
 ил C-STEM-V-REG ;
 сыp C-STEM-V-REG ;
 тух C-STEM-V-REG ;
 туп C-STEM-V-REG ;
+чуп C-STEM-V-REG ; ! "бежать"
 тат C-STEM-V-REG ;
 юх C-STEM-V-REG ;
 кур C-STEM-V-REG ; ! "видеть"
