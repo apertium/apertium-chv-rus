@@ -43,6 +43,9 @@ Multichar_Symbols
 %<p1%>       ! First person
 %<p2%>       ! Second person
 %<p3%>       ! Third person
+%<m%>        ! Masculine 
+%<f%>        ! Feminine
+%<mf%>       ! Masculine / feminine
 %<px1sg%>    ! Possessive first person, singular
 %<px2sg%>    ! Possessive second person, singular
 %<px3sg%>    ! Possessive third person, singular
@@ -174,6 +177,17 @@ LEXICON NOM-POSS-U
 %<px3pl%>:%>вӗ NOM-PLUR-V ;
 NOM-PLUR-V ;
 
+LEXICON NOM-POSS-V
+
+%<px1sg%>:%>%{Ă%}м NOM-PLUR-V ;
+%<px2sg%>:%>%{U%} NOM-PLUR-V ;
+%<px3sg%>:%>ӗ NOM-PLUR-V ;
+%<px1pl%>:%>%{Ă%}м%{Ă%}р NOM-PLUR-V ;
+%<px2pl%>:%>%{Ă%}р NOM-PLUR-V ;
+%<px3pl%>:%>ӗ NOM-PLUR-V ;
+NOM-PLUR-V ;
+
+
 LEXICON NOM-POSS-C
 
 %<px1sg%>:%>%{Ă%}м NOM-PLUR-C ;
@@ -217,6 +231,11 @@ LEXICON NP-ANT-MSC-C
 LEXICON NP-ANT-FEM-V
 
 %<np%>%<ant%>%<f%>: NOM-DECL-V ;
+
+LEXICON NP-COG-MF-C 
+
+%<np%>%<cog%>%<mf%>: NOM-DECL-C ;
+
 
 LEXICON NP-V
 
@@ -501,17 +520,27 @@ LEXICON NominalStems
 LEXICON ProperNouns
 
 Турӑ NP-V ; 
-Шупашкар NP-TOP-C ; 
-Мадрид NP-TOP-C ; 
+
 Крёз NP-TOP-C ;  ! "Крёз"
 Любляна NP-TOP-V ; 
+Мадрид NP-TOP-C ; 
 Мускав NP-TOP-C ; 
-Петӗр NP-ANT-MSC-C ; 
-Иван NP-ANT-MSC-C ; 
+Шупашкар NP-TOP-C ; 
+
 Владимир NP-ANT-MSC-C ; 
-Марина NP-ANT-FEM-V ; 
+Иван NP-ANT-MSC-C ; 
+Карл NP-ANT-MSC-C ; 
+Максим NP-ANT-MSC-C ; 
+Петӗр NP-ANT-MSC-C ; 
+
+Анна NP-ANT-FEM-V ; 
+Екатерина NP-ANT-FEM-V ; 
 Ирина NP-ANT-FEM-V ; 
+Марина NP-ANT-FEM-V ; 
 Яна NP-ANT-FEM-V ; 
+
+Ленин NP-COG-MF-C ;
+Маркс NP-COG-MF-C ;
 
 LEXICON Adverbs
 
