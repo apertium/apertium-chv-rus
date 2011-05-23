@@ -1,0 +1,23 @@
+Config:
+  hfst:
+    Gen: ../cv-ru.autogen.hfst
+    Morph: ../cv-ru.automorf.hfst
+
+Tests:
+
+  "[lexc] Possessives (Back, C-stem)":
+    ывӑл<n><px1sg><abs> : ывӑлӑм
+    ывӑл<n><px2sg><abs> : ывӑлу
+    ывӑл<n><px3sg><abs> : ывӑлӗ
+    ывӑл<n><px1pl><abs> : ывӑлӑмӑр
+    ывӑл<n><px2pl><abs> : ывӑлӑр
+    ывӑл<n><px3pl><abs> : ывӑлӗ
+
+  "[lexc] Possessives (Back, V-stem)":
+    ача<n><px1sg><abs> : ачам
+    ача<n><px2sg><abs> : ачу
+    ача<n><px3sg><abs> : ачи
+    ача<n><px1pl><abs> : ачамӑр
+    ача<n><px2pl><abs> : ачӑр
+    ача<n><px3pl><abs> : ачи
+

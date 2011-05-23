@@ -11,3 +11,5 @@
 dev/test-sentences.txt -text
 /modes.xml -text
 /pending-tests.sh -text
+tests/HfstTester.py -text
+tests/cv-nominals.txt -text
