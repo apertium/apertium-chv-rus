@@ -413,6 +413,9 @@ LEXICON Pronouns
 
 LEXICON Numerals
 
+иккӗ NUMshort ;
+иккӗ:икӗ NUMshort ; ! "два" @LR@
+
 пӗр NUMshort ;
 пӗр:пӗрре NUMlong ;
 
@@ -429,53 +432,55 @@ LEXICON AdjStems
 хавас ADJ ;
 пуян ADJ ;
 чылай ADJ ;
+чӑваш ADJ ; ! "чувашский"
 пӗчӗк ADJ ;
+урлӑ ADJ ; ! "поперечный" 
+тӗп ADJ ; ! "главный, основной"
+кӗрет ADJ ; ! "открытый, гласный"
 тӗрлӗ ADJ ; ! "разный, различный, всякий"
 
 LEXICON NominalStems
 
-завод NOM-C-REG ; 
-католик NOM-C-REG ; 
-колхозник NOM-C-REG ; 
-кун NOM-C-REG ;
-мир NOM-C-REG ; 
-поезд NOM-C-REG ; 
-сын NOM-C-REG ; 
-фабрик NOM-C-REG ; 
-чечек NOM-C-REG ; 
-ҫурҫӗр NOM-C-REG ; 
-кӑнтӑр NOM-C-REG ; 
-департамент NOM-C-REG ; 
-хавас NOM-C-REG ; 
-ударник NOM-C-REG ; 
-çурт NOM-C-REG ;
-хваттер NOM-C-REG ;
-кӗçнерни% кун NOM-C-REG ; ! "четверг"
 вырсарни% кун NOM-C-REG ; ! "воскресенье"
+вӗренекен NOM-C-REG ; ! "учащийся" 
+департамент NOM-C-REG ; 
+кун NOM-C-REG ;
+кӑнтӑр NOM-C-REG ; 
+кӗçнерни% кун NOM-C-REG ; ! "четверг"
+лаптӑк NOM-C-REG ; ! "площадь, пространство; участок"
+мир NOM-C-REG ; 
+мулкач NOM-C-REG ; ! "" 
+паллӑ NOM-C-REG ; ! "знак, метка; отметка, оценка" 
+сын NOM-C-REG ; 
+ударник NOM-C-REG ; 
+фабрик NOM-C-REG ; 
+хавас NOM-C-REG ; 
+хваттер NOM-C-REG ;
+чечек NOM-C-REG ; 
+шыв NOM-C-REG ; ! "вода" 
+ывӑл NOM-C-REG ; ! "сын" 
 юн% кун NOM-C-REG ; ! "среда"
-ҫул NOM-C-REG ; ! "" 
 юханшыв NOM-C-REG ; ! "река" 
 юханшыв:юхан% шыв NOM-C-REG ; ! "река"  @LR@
-мулкач NOM-C-REG ; ! "" 
-вӗренекен NOM-C-REG ; ! "учащийся" 
-ывӑл NOM-C-REG ; ! "сын" 
-шыв NOM-C-REG ; ! "вода" 
-ҫӗр NOM-C-REG ; ! "ночь, земля" 
-ҫухрӑм NOM-C-REG ; ! "верста, километр" 
 ял NOM-C-REG ; ! "село, деревня" 
+ҫул NOM-C-REG ; ! "" 
+ҫурт NOM-C-REG ;
+тӗп NOM-C-REG ; ! "дно, днище; подошва"
+ҫурҫӗр NOM-C-REG ; 
+ҫухрӑм NOM-C-REG ; ! "верста, километр" 
+ҫӗр NOM-C-REG ; ! "ночь, земля" 
 
-ҫӗрӗ NOM-V-REG ; ! "кольцо, перстень"
 ача NOM-V-REG ;
-кӗнеке NOM-V-REG ;
+курма NOM-V-REG ;
+кӗнеке NOM-V-REG ; ! "книга"
+кӳлӗ NOM-V-REG ; ! "озеро" 
+республика NOM-V-REG ;
 ту NOM-V-REG ;
 тӑва NOM-V-REG ;
 тӳпе NOM-V-REG ;
 уй NOM-V-REG ;
 чикӗ NOM-V-REG ;
-фонетика NOM-V-REG ;
-курма NOM-V-REG ;
-республика NOM-V-REG ;
-кӳлӗ NOM-V-REG ; ! "озеро" 
+ҫӗрӗ NOM-V-REG ; ! "кольцо, перстень"
 
 ҫыр:ҫыру NOM-U-REG ; ! "письмо"
 
@@ -483,13 +488,22 @@ LEXICON NominalStems
 депо NOM-O-REG ;
 бюро NOM-O-REG ;
 
+! -- Words with -o- that presumably violate vowel harmony
+
 семинар NOM-V-REG ; ! "семинар"
+завод NOM-C-REG ; 
+католик NOM-C-REG ; 
+колхозник NOM-C-REG ; 
+поезд NOM-C-REG ; 
+
+фонетика NOM-V-REG ;
 
 LEXICON ProperNouns
 
 Турӑ NP-V ; 
 Шупашкар NP-TOP-C ; 
 Мадрид NP-TOP-C ; 
+Крёз NP-TOP-C ;  ! "Крёз"
 Любляна NP-TOP-V ; 
 Мускав NP-TOP-C ; 
 Петӗр NP-ANT-MSC-C ; 
@@ -513,6 +527,7 @@ LEXICON Adverbs
 вара ADV ;
 ыран ADV ; ! "завтра"
 паян% кунӗпа ADV ;
+урлӑ ADV ; ! "поперёк"
 
 LEXICON Postpos 
 
@@ -531,6 +546,7 @@ LEXICON Postpos
 тавра POST ; 
 ҫинче POST ;  ! ""
 ҫинчен POST ;  ! ""
+хыҫҫӑн POST ;  ! "после, за"
 
 LEXICON Conjunctions 
 
@@ -552,7 +568,8 @@ LEXICON VerbStems
 чуп C-STEM-V-REG ; ! "бежать"
 тат C-STEM-V-REG ;
 ҫӗр C-STEM-V-REG ; ! "гнить, тлеть"
-юх C-STEM-V-REG ;
+юх C-STEM-V-REG ; ! "течь, литься"
+ҫак C-STEM-V-REG ; ! "вешать"
 вырнаҫ C-STEM-V-REG ; ! "располагаться, расмещаться"
 кур C-STEM-V-REG ; ! "видеть"
 хатӗрлен C-STEM-V-REG ; ! "готовиться, собираться"
