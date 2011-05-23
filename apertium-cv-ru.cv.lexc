@@ -388,6 +388,8 @@ LEXICON NominalStems
 департамент NOM-C-REG ; 
 хавас NOM-C-REG ; 
 ударник NOM-C-REG ; 
+çурт NOM-C-REG ;
+хваттер NOM-C-REG ;
 
 ҫӗре NOM-V-REG ; 
 ача NOM-V-REG ;
@@ -478,6 +480,7 @@ LEXICON VerbStems
 
 LEXICON Interjections 
 
+тавтапуҫ%<ij%>:тавтапуҫ # ;
 пысак% тавтапуҫ%<ij%>:пысак% тавтапуҫ # ;
 
 LEXICON Punct

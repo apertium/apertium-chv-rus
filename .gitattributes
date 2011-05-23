@@ -10,3 +10,4 @@
 /cv-ru.prob -text
 dev/test-sentences.txt -text
 /modes.xml -text
+/pending-tests.sh -text
