@@ -66,11 +66,11 @@
  
     <!-- SECTION: Pronouns -->
 
-    <e c="  0"><p><l>епӗ<s n="prn"/><s n="pers"/><s n="p1"/><s n="sg"/></l><r>prpers<s n="prn"/><s n="p1"/><s n="mf"/><s n="sg"/></r></p></e>
-    <e c="  0"><p><l>есӗ<s n="prn"/><s n="pers"/><s n="p2"/><s n="sg"/></l><r>prpers<s n="prn"/><s n="p2"/><s n="mf"/><s n="sg"/></r></p></e>
+    <e c="  0"><p><l>эпӗ<s n="prn"/><s n="pers"/><s n="p1"/><s n="sg"/></l><r>prpers<s n="prn"/><s n="p1"/><s n="mf"/><s n="sg"/></r></p></e>
+    <e c="  0"><p><l>эсӗ<s n="prn"/><s n="pers"/><s n="p2"/><s n="sg"/></l><r>prpers<s n="prn"/><s n="p2"/><s n="mf"/><s n="sg"/></r></p></e>
     <e c="  0"><p><l>вӑл<s n="prn"/><s n="pers"/><s n="p3"/><s n="sg"/></l><r>prpers<s n="prn"/><s n="p3"/><s n="GD"/><s n="sg"/></r></p></e>
     <e c="  0"><p><l>эпир<s n="prn"/><s n="pers"/><s n="p1"/><s n="pl"/></l><r>prpers<s n="prn"/><s n="p1"/><s n="mf"/><s n="pl"/></r></p></e>
-    <e c="  0"><p><l>есир<s n="prn"/><s n="pers"/><s n="p2"/><s n="pl"/></l><r>prpers<s n="prn"/><s n="p2"/><s n="mf"/><s n="pl"/></r></p></e>
+    <e c="  0"><p><l>эсир<s n="prn"/><s n="pers"/><s n="p2"/><s n="pl"/></l><r>prpers<s n="prn"/><s n="p2"/><s n="mf"/><s n="pl"/></r></p></e>
     <e c="  0"><p><l>вӗсем<s n="prn"/><s n="pers"/><s n="p3"/><s n="pl"/></l><r>prpers<s n="prn"/><s n="p3"/><s n="GD"/><s n="pl"/></r></p></e>
 
     <!-- SECTION: Determiners -->
@@ -112,6 +112,7 @@
     <e c="  0"><p><l>çурçӗр<s n="n"/></l><r>север<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
     <e c="  0"><p><l>кӑнтӑр<s n="n"/></l><r>юг<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
     <e c="  0"><p><l>хваттер<s n="n"/></l><r>квартира<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
+    <e c="  0"><p><l>кӗçнерни<b/>кун<s n="n"/></l><r>четверг<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
 
     <!-- SECTION: Proper nouns -->
 
@@ -129,6 +130,7 @@
     <e c="  0"><p><l>нумай<s n="adv"/></l><r>много<s n="adv"/></r></p></e>
     <e c="  0"><p><l>киле<s n="adv"/></l><r>домой<s n="adv"/></r></p></e>
     <e c="  0"><p><l>пите<s n="adv"/></l><r>очень<s n="adv"/></r></p></e>
+    <e c="  0"><p><l>ыран<s n="adv"/></l><r>завтра<s n="adv"/></r></p></e>
 
     <!-- SECTION: Verbs -->
 

@@ -390,6 +390,7 @@ LEXICON NominalStems
 ударник NOM-C-REG ; 
 çурт NOM-C-REG ;
 хваттер NOM-C-REG ;
+кӗçнерни% кун NOM-C-REG ; ! "четверг"
 
 ҫӗре NOM-V-REG ; 
 ача NOM-V-REG ;
@@ -427,6 +428,7 @@ LEXICON Adverbs
 паян ADV ;
 ернипе ADV ;
 ҫӗрӗпе ADV ;
+ыран ADV ; ! "завтра"
 паян% кунӗпа ADV ;
 
 LEXICON Postpos 
