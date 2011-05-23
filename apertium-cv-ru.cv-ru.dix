@@ -63,6 +63,7 @@
     <!-- SECTION: Postpositions -->
     
     <e c="  0"><p><l>валли<s n="post"/></l><r>для<s n="pr"/></r></p></e>
+    <e slr="1"><p><l>валли<s n="post"/></l><r>к<s n="pr"/></r></p></e>
  
     <!-- SECTION: Pronouns -->
 
@@ -121,7 +122,7 @@
 
     <!-- SECTION: Adjectives -->
 
-    <e c="  0"><p><l>шӗнӗ<s n="adj"/></l><r>новий<s n="adj"/></r></p></e>
+    <e c="  0"><p><l>шӗнӗ<s n="adj"/></l><r>новый<s n="adj"/></r></p></e>
     <e c="  0"><p><l>хавас<s n="adj"/></l><r>рад<s n="adj"/></r></p></e>
 
     <!-- SECTION: Adverbs -->

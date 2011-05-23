@@ -43,6 +43,12 @@ Multichar_Symbols
 %<p1%>       ! First person
 %<p2%>       ! Second person
 %<p3%>       ! Third person
+%<px1sg%>    ! Possessive first person, singular
+%<px2sg%>    ! Possessive second person, singular
+%<px3sg%>    ! Possessive third person, singular
+%<px1pl%>    ! Possessive first person, plural
+%<px2pl%>    ! Possessive second person, plural
+%<px3pl%>    ! Possessive third person, plural
 %<def%>      ! Definite
 %<ind%>      ! Indefinite
 %<dem%>      ! Demonstrative
@@ -64,8 +70,9 @@ Multichar_Symbols
 
 
 %>           ! Morpheme boundary
-%{а%}        ! Archivowel: а or е 
-%{ӑ%}        ! Archivowel: ӑ or ӗ
+%{A%}        ! Archivowel: а or е 
+%{Ă%}        ! Archivowel: ӑ or ӗ
+%{U%}        ! Archivowel: у or ӳ
 %{р%}        ! Archiconsonant: р оr т 
 %{н%}        ! Archiconsonant: н or м 
 %{ь%}        ! ь or ''
@@ -108,45 +115,92 @@ LEXICON NOM-DECL-C
 ! 10. -o>n        After some borrowed vowel stems in -o
 ! 11. -s>ăn       After borrowed stems in -st'      
 
-%<gen%>:%>%{а%}н # ;        ! 
+%<gen%>:%>%{A%}н # ;        ! 
 
 %<obj%>%<ind%>: # ;          ! 
-%<obj%>%<def%>:%>%{а%} # ;          ! 
-%<loc%>:%>%{р%}%{а%} # ;        ! 
-%<abl%>:%>%{р%}%{а%}н # ;        ! 
-%<ins%>:%>п%{а%} # ;        ! 
-%<fin%>:%>ш%{ӑ%}н # ;      ! 
-%<priv%>:%>с%{ӑ%}р # ;      ! 
+%<obj%>%<def%>:%>%{A%} # ;          ! 
+%<loc%>:%>%{р%}%{A%} # ;        ! 
+%<abl%>:%>%{р%}%{A%}н # ;        ! 
+%<ins%>:%>п%{A%} # ;        ! 
+%<fin%>:%>ш%{Ă%}н # ;      ! 
+%<priv%>:%>с%{Ă%}р # ;      ! 
 %<term%>:%>чен # ;          ! 
 %<dist%>:%>серен # ;          ! 
-%<direc%>:%>%{а%}лл%{а%} # ;          ! 
-
+%<direc%>:%>%{A%}лл%{A%} # ;          ! 
 
 LEXICON NOM-DECL-V
 
 %<abs%>: # ;
-%<gen%>:%>%{а%}н # ;        ! 
+%<gen%>:%>%{A%}н # ;        ! 
 
 %<obj%>%<ind%>: # ;          ! 
-%<obj%>%<def%>:%>%{а%} # ;          ! 
-%<loc%>:%>%{р%}%{а%} # ;        ! 
-%<abl%>:%>%{р%}%{а%}н # ;        ! 
-%<ins%>:%>п%{а%} # ;        ! 
-%<fin%>:%>ш%{ӑ%}н # ;      ! 
-%<priv%>:%>с%{ӑ%}р # ;      ! 
+%<obj%>%<def%>:%>%{A%} # ;          ! 
+%<loc%>:%>%{р%}%{A%} # ;        ! 
+%<abl%>:%>%{р%}%{A%}н # ;        ! 
+%<ins%>:%>п%{A%} # ;        ! 
+%<fin%>:%>ш%{Ă%}н # ;      ! 
+%<priv%>:%>с%{Ă%}р # ;      ! 
 %<term%>:%>чен # ;          ! 
 %<dist%>:%>серен # ;          ! 
-%<direc%>:%>лл%{а%} # ;          ! 
+%<direc%>:%>лл%{A%} # ;          ! 
+
+LEXICON NOM-PLUR-C
+
+%<pl%>:%>се%{н%} NOM-DECL-C ;
+NOM-DECL-C ;
+
+LEXICON NOM-PLUR-V
+
+%<pl%>:%>се%{н%} NOM-DECL-V ;
+NOM-DECL-V ;
+
+LEXICON NOM-POSS-O
+
+%<px1sg%>:%>в%{Ă%}м NOM-PLUR-V ;
+%<px2sg%>:%>в%{U%} NOM-PLUR-V ;
+%<px3sg%>:%>вӗ NOM-PLUR-V ;
+%<px1pl%>:%>в%{Ă%}м%{Ă%}р NOM-PLUR-V ;
+%<px2pl%>:%>в%{Ă%}р NOM-PLUR-V ;
+%<px3pl%>:%>вӗ NOM-PLUR-V ;
+NOM-PLUR-V ;
+
+LEXICON NOM-POSS-U
+
+%<px1sg%>:%>в%{Ă%}м NOM-PLUR-V ;
+%<px2sg%>:%>в%{U%} NOM-PLUR-V ;
+%<px3sg%>:%>вӗ NOM-PLUR-V ;
+%<px1pl%>:%>в%{Ă%}м%{Ă%}р NOM-PLUR-V ;
+%<px2pl%>:%>в%{Ă%}р NOM-PLUR-V ;
+%<px3pl%>:%>вӗ NOM-PLUR-V ;
+NOM-PLUR-V ;
+
+LEXICON NOM-POSS-C
+
+%<px1sg%>:%>%{Ă%}м NOM-PLUR-C ;
+%<px2sg%>:%>%{U%} NOM-PLUR-C ;
+%<px3sg%>:%>ӗ NOM-PLUR-C ;
+%<px1pl%>:%>%{Ă%}м%{Ă%}р NOM-PLUR-C ;
+%<px2pl%>:%>%{Ă%}р NOM-PLUR-C ;
+%<px3pl%>:%>ӗ NOM-PLUR-C ;
+NOM-PLUR-C ;
 
 LEXICON NOM-C-REG
 
-%<n%>: NOM-DECL-C ;
-%<n%>%<pl%>:%>се%{н%} NOM-DECL-C ;
+%<n%>: NOM-POSS-C ;
+
+LEXICON NOM-O-REG
+
+%<n%>: NOM-POSS-O ;
+
+LEXICON NOM-U-REG
+
+%<n%>: NOM-POSS-U ;
 
 LEXICON NOM-V-REG
 
-%<n%>: NOM-DECL-V ;
-%<n%>%<pl%>:%>се%{н%} NOM-DECL-V ;
+%<n%>: NOM-POSS-V ;
+
+
 
 LEXICON NP-C
 
@@ -219,52 +273,52 @@ LEXICON PART
 
 LEXICON V-PRES-CONJ
 
-%<dur%>%<pres%>%<p1%>%<sg%>:%>т%{ӑ%}р # ;
-%<dur%>%<pres%>%<p2%>%<sg%>:%>т%{ӑ%}н # ; 
+%<dur%>%<pres%>%<p1%>%<sg%>:%>т%{Ă%}р # ;
+%<dur%>%<pres%>%<p2%>%<sg%>:%>т%{Ă%}н # ; 
 %<dur%>%<pres%>%<p3%>%<sg%>:%>т%{ь%} # ;
-%<dur%>%<pres%>%<p1%>%<pl%>:%>тп%{ӑ%}р # ;
-%<dur%>%<pres%>%<p2%>%<pl%>:%>т%{ӑ%}р # ; 
+%<dur%>%<pres%>%<p1%>%<pl%>:%>тп%{Ă%}р # ;
+%<dur%>%<pres%>%<p2%>%<pl%>:%>т%{Ă%}р # ; 
 %<dur%>%<pres%>%<p3%>%<pl%>:%>ҫҫӗ # ;
 
 LEXICON C-PRES-CONJ
 
-%<dur%>%<pres%>%<p1%>%<sg%>:%>%{а%}т%{ӑ%}р # ;
-%<dur%>%<pres%>%<p2%>%<sg%>:%>%{а%}т%{ӑ%}н # ; 
-%<dur%>%<pres%>%<p3%>%<sg%>:%>%{а%}т%{ь%} # ;
-%<dur%>%<pres%>%<p1%>%<pl%>:%>%{а%}тп%{ӑ%}р # ;
-%<dur%>%<pres%>%<p2%>%<pl%>:%>%{а%}т%{ӑ%}р # ; 
-%<dur%>%<pres%>%<p3%>%<pl%>:%>%{а%}ҫҫӗ # ;
+%<dur%>%<pres%>%<p1%>%<sg%>:%>%{A%}т%{Ă%}р # ;
+%<dur%>%<pres%>%<p2%>%<sg%>:%>%{A%}т%{Ă%}н # ; 
+%<dur%>%<pres%>%<p3%>%<sg%>:%>%{A%}т%{ь%} # ;
+%<dur%>%<pres%>%<p1%>%<pl%>:%>%{A%}тп%{Ă%}р # ;
+%<dur%>%<pres%>%<p2%>%<pl%>:%>%{A%}т%{Ă%}р # ; 
+%<dur%>%<pres%>%<p3%>%<pl%>:%>%{A%}ҫҫӗ # ;
 
 LEXICON C-PAST-CONJ
 
-%<past%>%<p1%>%<sg%>:%>т%{ӑ%}м # ;
-%<past%>%<p2%>%<sg%>:%>т%{ӑ%}н # ; 
-%<past%>%<p3%>%<sg%>:%>ч%{ӑ%} # ;
-%<past%>%<p1%>%<pl%>:%>т%{ӑ%}м%{ӑ%}р # ;
-%<past%>%<p2%>%<pl%>:%>т%{ӑ%}р # ; 
-%<past%>%<p3%>%<pl%>:%>ч%{ӑ%}ҫ # ;
+%<past%>%<p1%>%<sg%>:%>т%{Ă%}м # ;
+%<past%>%<p2%>%<sg%>:%>т%{Ă%}н # ; 
+%<past%>%<p3%>%<sg%>:%>ч%{Ă%} # ;
+%<past%>%<p1%>%<pl%>:%>т%{Ă%}м%{Ă%}р # ;
+%<past%>%<p2%>%<pl%>:%>т%{Ă%}р # ; 
+%<past%>%<p3%>%<pl%>:%>ч%{Ă%}ҫ # ;
 
 
 LEXICON V-STEM-CONJ
 
-%<pprs%>:%>к%{а%}н NOM-DECL-C ;
-%<pp%>:%>н%{ӑ%} # ;
-%<fp%>:%>%{а%}с # ;
-%<inf%>:%>м%{а%} # ;
-%<conv%>:%>с%{а%} # ;
-%<neg%>:%>м%{а%}с V-PRES-CONJ ;
+%<pprs%>:%>к%{A%}н NOM-DECL-C ;
+%<pp%>:%>н%{Ă%} # ;
+%<fp%>:%>%{A%}с # ;
+%<inf%>:%>м%{A%} # ;
+%<conv%>:%>с%{A%} # ;
+%<neg%>:%>м%{A%}с V-PRES-CONJ ;
 V-PRES-CONJ ; 
 
 !%<der‣caus%>%<v%>:%>тар Vreg ; 
 
 LEXICON C-STEM-CONJ
 
-%<pprs%>:%>к%{а%}н NOM-DECL-C ;
-%<pp%>:%>н%{ӑ%} # ;
-%<fp%>:%>%{а%}с # ;
-%<inf%>:%>м%{а%} # ;
-%<conv%>:%>с%{а%} # ;
-%<neg%>:%>м%{а%}с C-PRES-CONJ ;
+%<pprs%>:%>к%{A%}н NOM-DECL-C ;
+%<pp%>:%>н%{Ă%} # ;
+%<fp%>:%>%{A%}с # ;
+%<inf%>:%>м%{A%} # ;
+%<conv%>:%>с%{A%} # ;
+%<neg%>:%>м%{A%}с C-PRES-CONJ ;
 C-PRES-CONJ ; 
 C-PAST-CONJ ; 
 
@@ -365,12 +419,18 @@ LEXICON Numerals
 пилӗк NUMshort ;
 пилӗк:пиллӗк NUMlong ;
 
+çитмӗл NUMshort ;
+
 млн%.:млн%. NUM-ABBR ;
 
 LEXICON AdjStems
 
 шӗнӗ ADJ ;
 хавас ADJ ;
+пуян ADJ ;
+чылай ADJ ;
+пӗчӗк ADJ ;
+тӗрлӗ ADJ ; ! "разный, различный, всякий"
 
 LEXICON NominalStems
 
@@ -391,8 +451,20 @@ LEXICON NominalStems
 çурт NOM-C-REG ;
 хваттер NOM-C-REG ;
 кӗçнерни% кун NOM-C-REG ; ! "четверг"
+вырсарни% кун NOM-C-REG ; ! "воскресенье"
+юн% кун NOM-C-REG ; ! "среда"
+ҫул NOM-C-REG ; ! "" 
+юханшыв NOM-C-REG ; ! "река" 
+юханшыв:юхан% шыв NOM-C-REG ; ! "река"  @LR@
+мулкач NOM-C-REG ; ! "" 
+вӗренекен NOM-C-REG ; ! "учащийся" 
+ывӑл NOM-C-REG ; ! "сын" 
+шыв NOM-C-REG ; ! "вода" 
+ҫӗр NOM-C-REG ; ! "ночь, земля" 
+ҫухрӑм NOM-C-REG ; ! "верста, километр" 
+ял NOM-C-REG ; ! "село, деревня" 
 
-ҫӗре NOM-V-REG ; 
+ҫӗрӗ NOM-V-REG ; ! "кольцо, перстень"
 ача NOM-V-REG ;
 кӗнеке NOM-V-REG ;
 ту NOM-V-REG ;
@@ -402,6 +474,16 @@ LEXICON NominalStems
 чикӗ NOM-V-REG ;
 фонетика NOM-V-REG ;
 курма NOM-V-REG ;
+республика NOM-V-REG ;
+кӳлӗ NOM-V-REG ; ! "озеро" 
+
+ҫыр:ҫыру NOM-U-REG ; ! "письмо"
+
+кино NOM-O-REG ; ! "кино"
+депо NOM-O-REG ;
+бюро NOM-O-REG ;
+
+семинар NOM-V-REG ; ! "семинар"
 
 LEXICON ProperNouns
 
@@ -428,6 +510,7 @@ LEXICON Adverbs
 паян ADV ;
 ернипе ADV ;
 ҫӗрӗпе ADV ;
+вара ADV ;
 ыран ADV ; ! "завтра"
 паян% кунӗпа ADV ;
 
@@ -441,11 +524,13 @@ LEXICON Postpos
 тӑрӑх POST ; 
 пула POST ; 
 пирки POST ; 
-валли POST ; 
+валли POST ; ! "для, к"
 кура POST ; 
 хирӗҫ POST ; 
 пуҫне POST ; 
 тавра POST ; 
+ҫинче POST ;  ! ""
+ҫинчен POST ;  ! ""
 
 LEXICON Conjunctions 
 
@@ -466,8 +551,11 @@ LEXICON VerbStems
 туп C-STEM-V-REG ;
 чуп C-STEM-V-REG ; ! "бежать"
 тат C-STEM-V-REG ;
+ҫӗр C-STEM-V-REG ; ! "гнить, тлеть"
 юх C-STEM-V-REG ;
+вырнаҫ C-STEM-V-REG ; ! "располагаться, расмещаться"
 кур C-STEM-V-REG ; ! "видеть"
+хатӗрлен C-STEM-V-REG ; ! "готовиться, собираться"
 
 тӑва V-STEM-V-REG ;
 кая V-STEM-V-REG ;
@@ -476,6 +564,7 @@ LEXICON VerbStems
 вула V-STEM-V-REG ;
 ӗҫле V-STEM-V-REG ;
 те V-STEM-V-REG ;
+хатӗрле V-STEM-V-REG ; ! "готовить, заготавливать, запасать"
 
 пырса% кала V-STEM-V-REG ;
 тухса% кай C-STEM-V-REG ;

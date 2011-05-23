@@ -21,3 +21,35 @@ Tests:
     ача<n><px2pl><abs> : ачӑр
     ача<n><px3pl><abs> : ачи
 
+  "[lexc] Possessives (Front, C-stem)":
+    хӗр<n><px1sg><abs> : хӗрӗм
+    хӗр<n><px2sg><abs> : хӗрӳ
+    хӗр<n><px3sg><abs> : хӗрӗ
+    хӗр<n><px1pl><abs> : хӗрӗмӗр
+    хӗр<n><px2pl><abs> : хӗрӗр
+    хӗр<n><px3pl><abs> : хӗрӗ
+
+  "[lexc] Possessives (Front, V-stem)":
+    ӗне<n><px1sg><abs> : ӗнем
+    ӗне<n><px2sg><abs> : ӗнӳ
+    ӗне<n><px3sg><abs> : ӗни
+    ӗне<n><px1pl><abs> : ӗнемӗр
+    ӗне<n><px2pl><abs> : ӗнӗр
+    ӗне<n><px3pl><abs> : ӗни
+
+  "[lexc] Possessives (Back, U-stem)":
+    ҫыру<n><px1sg><abs> : ҫырӑвӑм
+    ҫыру<n><px2sg><abs> : ҫыраву
+    ҫыру<n><px3sg><abs> : ҫырӑвӗ
+    ҫыру<n><px1pl><abs> : ҫырӑвӑмӑр
+    ҫыру<n><px2pl><abs> : ҫырӑвӗр
+    ҫыру<n><px3pl><abs> : ҫырӑвӗ
+
+  "[lexc] Possessives (Loans, O-stem)":
+    бюро<n><px1sg><abs> : бюровӗм
+    бюро<n><px2sg><abs> : бюровӳ
+    бюро<n><px3sg><abs> : бюровӗ
+    бюро<n><px1pl><abs> : бюровӗмӗр
+    бюро<n><px2pl><abs> : бюровӗр
+    бюро<n><px3pl><abs> : бюровӗ
+

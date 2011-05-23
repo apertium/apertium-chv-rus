@@ -2,7 +2,7 @@ Alphabet
  а ӑ б в г д е ё ӗ ж з и й к л м н о п р с ҫ т у ӳ ф х ц ч ш щ ъ ы ь э ю я 
  А Ӑ Б В Г Д Е Ё Ӗ Ж З И Й К Л М Н О П Р С Ҫ Т У Ӳ Ф Х Ц Ч Ш Щ Ъ Ы Ь Э Ю Я 
 
- %>:0 %{а%}:а %{ӑ%}:ӑ %{р%}:р %{ь%}:ь %{н%}:м ; 
+ %>:0 %{A%}:а %{Ă%}:ӑ %{U%}:у %{р%}:р %{ь%}:ь %{н%}:м ; 
 
 Sets
 
@@ -11,9 +11,9 @@ ArchiCns = %{р%} ;
 Cns = б в г д ж з к л м н п р с ҫ т ф х ц ч ш щ ъ ы ь 
       Б В Г Д Ж З К Л М Н П Р С Ҫ Т Ф Х Ц Ч Ш Щ Ъ Ы Ь ArchiCns;
 
-FrontVow = и ӳ е ӗ ;
-BackVow = ы у а ӑ ;
-ArchiVow = %{а%} %{ӑ%} ;
+FrontVow = и ӳ е э ӗ И Ӳ Е Ӗ Э ;
+BackVow = ы у а ӑ Ы У А Ӑ ;
+ArchiVow = %{A%} %{Ă%} %{U%} ;
 Vow = FrontVow BackVow ArchiVow ;
 Segment = FrontVow BackVow ArchiVow Cns ;
 NonFront = Cns BackVow ArchiVow %> ;
@@ -21,14 +21,17 @@ NonBack =  Cns FrontVow ArchiVow %> ;
 
 Rules
 
-"Front harmony {а} -> е"
-%{а%}:е <=> FrontVow: NonBack:* %>: NonBack:* _ ;
+"Front harmony {A} -> е"
+%{A%}:е <=> FrontVow: NonBack:* %>: NonBack:* _ ;
 
-"Front harmony {ӑ} -> ӗ"
-%{ӑ%}:ӗ <=> FrontVow: NonBack:* %>: NonBack:* _ ;
+"Front harmony {Ă} -> ӗ"
+%{Ă%}:ӗ <=> FrontVow: NonBack:* %>: NonBack:* _ ;
 
-!"Assimilation in locative/ablative"
-!%{р%}:т <=> [ л | н | р ] %>: _ ; 
+"Front harmony {U} -> ӳ"
+%{U%}:ӳ <=> FrontVow: NonBack:* %>: NonBack:* _ ;
+
+"Assimilation in locative/ablative"
+%{р%}:т <=> [ л | н | р ] %>: _ %{A%}: ; 
 
 ! p. 40
 "Orthographical ь after back vowel stems"
