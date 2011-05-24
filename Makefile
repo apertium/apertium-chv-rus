@@ -12,6 +12,7 @@ all:
 
 	if [ ! -d .deps ]; then mkdir .deps; fi
 	xsltproc lexchoicebil.xsl apertium-cv-ru.cv-ru.dix > .deps/apertium-cv-ru.cv-ru.dix
+	apertium-validate-dictionary .deps/apertium-cv-ru.cv-ru.dix
 
 	lt-comp lr .deps/apertium-cv-ru.cv-ru.dix cv-ru.autobil.bin
 	lt-comp rl $(RU) cv-ru.autogen.bin

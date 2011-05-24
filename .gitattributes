@@ -9,6 +9,7 @@
 /apertium-cv-ru.cv.twol -text
 /cv-ru.prob -text
 dev/test-sentences.txt -text
+/lexchoicebil.xsl -text
 /modes.xml -text
 /pending-tests.sh -text
 tests/HfstTester.py -text

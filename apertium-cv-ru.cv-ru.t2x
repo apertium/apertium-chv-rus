@@ -11,6 +11,9 @@
     <def-cat n="SN_ABL">
       <cat-item tags="SN.*.*.*.abl"/>
     </def-cat>
+    <def-cat n="SN_LOC">
+      <cat-item tags="SN.*.*.*.loc"/>
+    </def-cat>
     <def-cat n="V">
       <cat-item tags="V"/>
       <cat-item tags="V.*"/>
@@ -80,6 +83,39 @@
         </out>
       </action>
     </rule>
+
+    <rule comment="REGLA: SN_LOC">
+      <pattern>
+        <pattern-item n="SN_LOC"/>
+      </pattern>
+      <action>
+        <let>
+          <clip pos="1" part="case"/>
+          <lit-tag v="acc"/>
+        </let>
+        <out>
+          <chunk>
+            <get-case-from pos="1">
+            <lit v="в"/>
+            </get-case-from>
+            <lit-tag v="PREP"/>
+            <lit v="{^"/>
+            <get-case-from pos="1">
+            <lit v="в"/>
+            </get-case-from>
+            <lit-tag v="pr"/>
+            <lit v="$}"/> 
+          </chunk>
+          <b/>
+          <chunk>
+            <clip pos="1" part="lem"/>
+            <clip pos="1" part="tags"/>
+            <clip pos="1" part="chcontent"/>
+          </chunk>
+        </out>
+      </action>
+    </rule>
+
 
 
   </section-rules>

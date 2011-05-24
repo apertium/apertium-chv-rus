@@ -490,6 +490,7 @@ LEXICON NominalStems
 ҫӗр NOM-C-REG ; ! "ночь, земля" 
 
 ача NOM-V-REG ;
+атте NOM-V-REG ; ! "отец"
 курма NOM-V-REG ;
 кӗнеке NOM-V-REG ; ! "книга"
 кӳлӗ NOM-V-REG ; ! "озеро" 
@@ -511,6 +512,7 @@ LEXICON NominalStems
 
 семинар NOM-V-REG ; ! "семинар"
 завод NOM-C-REG ; 
+трактор NOM-C-REG ; 
 католик NOM-C-REG ; 
 колхозник NOM-C-REG ; 
 поезд NOM-C-REG ; 
