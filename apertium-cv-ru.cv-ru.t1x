@@ -14,9 +14,14 @@
      <cat-item tags="np.*"/>
   </def-cat>
 
+  <def-cat n="vbserfin">
+     <cat-item lemma="пул" tags="v.dur.*"/>
+  </def-cat>
+
   <def-cat n="vbfin">
      <cat-item tags="v.dur.*"/>
   </def-cat>
+
   <def-cat n="vbfinpast">
      <cat-item tags="v.past.*"/>
   </def-cat>
@@ -41,6 +46,7 @@
   <def-attr n="a_verb">
      <attr-item tags="v"/>
      <attr-item tags="vblex"/>
+     <attr-item tags="vbser"/>
   </def-attr>
 
   <def-attr n="a_prn">
@@ -78,6 +84,7 @@
      <attr-item tags="dur.pres"/>
      <attr-item tags="pres"/>
      <attr-item tags="past"/>
+     <attr-item tags="fut"/>
   </def-attr>
 
   <def-attr n="nbr">
@@ -230,6 +237,36 @@
              <clip pos="1" side="tl" part="gen" link-to="3"/>
              <lit-tag v="4"/>
 	     <clip pos="1" side="tl" part="case" link-to="5"/>
+             <clip pos="1" side="tl" part="lemq"/>
+           </lu>
+         </chunk>
+       </out>
+     </action>
+  </rule>
+
+  <rule comment="regla: finite verb 'пул' → 'быть'">
+     <pattern>
+       <pattern-item n="vbserfin"/>
+     </pattern>
+     <action>
+       <let>
+         <clip pos="1" side="tl" part="temps"/>
+         <lit-tag v="fut"/>
+       </let>
+       <out>
+         <chunk name="verb" case="caseFirstWord">
+           <tags>
+             <tag><lit-tag v="V"/></tag>
+             <tag><clip pos="1" side="tl" part="temps"/></tag>
+             <tag><clip pos="1" side="tl" part="prs"/></tag>
+	     <tag><clip pos="1" side="tl" part="nbr"/></tag>
+           </tags>
+           <lu>
+             <clip pos="1" side="tl" part="lemh"/>
+             <clip pos="1" side="tl" part="a_verb"/>
+             <clip pos="1" side="tl" part="temps" link-to="2"/>
+             <clip pos="1" side="tl" part="prs" link-to="3"/>
+	     <clip pos="1" side="tl" part="nbr" link-to="4"/>
              <clip pos="1" side="tl" part="lemq"/>
            </lu>
          </chunk>

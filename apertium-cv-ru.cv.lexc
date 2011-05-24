@@ -21,6 +21,7 @@ Multichar_Symbols
 %<part%>     ! Particle
 
 %<der‣caus%> ! Derivation (V→V): Causative
+%<der‣lA%>   ! Derivation (N→V): 
 
 %<sg%>       ! Singular
 %<pl%>       ! Plural
@@ -201,6 +202,7 @@ NOM-PLUR-C ;
 LEXICON NOM-C-REG
 
 %<n%>: NOM-POSS-C ;
+!%<der‣lA%>%<v%>:%>л%{A%} Vreg ; 
 
 LEXICON NOM-O-REG
 
@@ -290,6 +292,11 @@ LEXICON PART
 
 %<part%>: # ; 
 
+LEXICON INTERJ
+
+%<ij%>: # ; 
+
+
 LEXICON V-PRES-CONJ
 
 %<dur%>%<pres%>%<p1%>%<sg%>:%>т%{Ă%}р # ;
@@ -342,6 +349,7 @@ C-PRES-CONJ ;
 C-PAST-CONJ ; 
 
 !%<der‣caus%>%<v%>:%>тар Vreg ; 
+!%<der‣refl%>:%>%{Ă%}н Vreg ;
 
 LEXICON V-STEM-V-REG
 
@@ -450,6 +458,7 @@ LEXICON AdjStems
 шӗнӗ ADJ ;
 хавас ADJ ;
 пуян ADJ ;
+ӗҫ ADJ ; ! "рабочий, трудовой"
 чылай ADJ ;
 чӑваш ADJ ; ! "чувашский"
 пӗчӗк ADJ ;
@@ -464,6 +473,7 @@ LEXICON NominalStems
 вӗренекен NOM-C-REG ; ! "учащийся" 
 департамент NOM-C-REG ; 
 кун NOM-C-REG ;
+ӗҫ NOM-C-REG ; ! "работа, труд"
 кӑнтӑр NOM-C-REG ; 
 кӗҫнерни% кун NOM-C-REG ; ! "четверг"
 лаптӑк NOM-C-REG ; ! "площадь, пространство; участок"
@@ -595,6 +605,8 @@ LEXICON VerbStems
 ил C-STEM-V-REG ;
 сыp C-STEM-V-REG ;
 тух C-STEM-V-REG ;
+пух C-STEM-V-REG ; ! "собирать"
+хыр C-STEM-V-REG ; ! "брить"
 туп C-STEM-V-REG ;
 чуп C-STEM-V-REG ; ! "бежать"
 тат C-STEM-V-REG ;
@@ -604,23 +616,25 @@ LEXICON VerbStems
 вырнаҫ C-STEM-V-REG ; ! "располагаться, расмещаться"
 кур C-STEM-V-REG ; ! "видеть"
 хатӗрлен C-STEM-V-REG ; ! "готовиться, собираться"
+ӗҫ C-STEM-V-REG ; ! "пить, пировать, выпивать"
 
 тӑва V-STEM-V-REG ;
 кая V-STEM-V-REG ;
 кай C-STEM-V-REG ;
+те V-STEM-V-REG ;
 сывла V-STEM-V-REG ;
 вула V-STEM-V-REG ;
 ӗҫле V-STEM-V-REG ;
-те V-STEM-V-REG ;
 хатӗрле V-STEM-V-REG ; ! "готовить, заготавливать, запасать"
+кӗрле V-STEM-V-REG ; ! "шуметь"
 
 пырса% кала V-STEM-V-REG ;
 тухса% кай C-STEM-V-REG ;
 
 LEXICON Interjections 
 
-тавтапуҫ%<ij%>:тавтапуҫ # ;
-пысак% тавтапуҫ%<ij%>:пысак% тавтапуҫ # ;
+тавтапуҫ INTERJ ;
+пысак% тавтапуҫ INTERJ ;
 
 LEXICON Punct
 

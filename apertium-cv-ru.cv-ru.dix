@@ -43,8 +43,9 @@
     <sdef n="ins"      c="Instrumental"/>
     <sdef n="obj"      c="Object"/>
 
-    <sdef n="ind"    c="Indefinite"/>
-    <sdef n="pers"     c="personal"/>
+    <sdef n="ind"      c="Indefinite"/>
+    <sdef n="dem"      c="Demonstrative"/>
+    <sdef n="pers"     c="Personal"/>
 
     <sdef n="imperf"   c="Imperfective"/>
     <sdef n="perf"     c="Perfective"/>
@@ -73,6 +74,8 @@
     <e c="  0"><p><l>эпир<s n="prn"/><s n="pers"/><s n="p1"/><s n="pl"/></l><r>prpers<s n="prn"/><s n="p1"/><s n="mf"/><s n="pl"/></r></p></e>
     <e c="  0"><p><l>эсир<s n="prn"/><s n="pers"/><s n="p2"/><s n="pl"/></l><r>prpers<s n="prn"/><s n="p2"/><s n="mf"/><s n="pl"/></r></p></e>
     <e c="  0"><p><l>вӗсем<s n="prn"/><s n="pers"/><s n="p3"/><s n="pl"/></l><r>prpers<s n="prn"/><s n="p3"/><s n="GD"/><s n="pl"/></r></p></e>
+
+    <e c="  0"><p><l>ку<s n="prn"/><s n="dem"/></l><r>это<s n="prn"/><s n="dem"/></r></p></e>
 
     <!-- SECTION: Determiners -->
 
@@ -114,6 +117,8 @@
     <e c="  0"><p><l>ҫурҫӗр<s n="n"/></l><r>север<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
     <e c="  0"><p><l>ҫӗре<s n="n"/></l><r>земля<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
     <e c="  0"><p><l>ӗҫлекен<s n="n"/></l><r>работник<s n="n"/><s n="m"/><s n="aa"/></r></p></e> <!-- @C -->
+    <e c="  0"><p><l>ӗҫ<s n="n"/></l><r>работа<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
+    <e slr="1"><p><l>ӗҫ<s n="n"/></l><r>труд<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
 
     <!-- SECTION: Proper nouns -->
 

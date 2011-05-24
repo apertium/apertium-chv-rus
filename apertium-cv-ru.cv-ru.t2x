@@ -31,6 +31,8 @@
       <attr-item tags="abs"/>
       <attr-item tags="abl"/>
       <attr-item tags="gen"/>
+      <attr-item tags="loc"/>
+      <attr-item tags="acc"/>
     </def-attr>
   </section-def-attrs>
 
