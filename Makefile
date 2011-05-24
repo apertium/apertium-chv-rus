@@ -10,7 +10,10 @@ all:
 	hfst-fst2fst -O -i .deps/cv-ru.morf.hfst -o cv-ru.automorf.hfst
 	hfst-fst2fst -O -i .deps/cv-ru.gen.hfst -o cv-ru.autogen.hfst
 
-	lt-comp lr apertium-cv-ru.cv-ru.dix cv-ru.autobil.bin
+	if [ ! -d .deps ]; then mkdir .deps; fi
+	xsltproc lexchoicebil.xsl apertium-cv-ru.cv-ru.dix > .deps/apertium-cv-ru.cv-ru.dix
+
+	lt-comp lr .deps/apertium-cv-ru.cv-ru.dix cv-ru.autobil.bin
 	lt-comp rl $(RU) cv-ru.autogen.bin
 	cg-comp apertium-cv-ru.cv-ru.rlx cv-ru.rlx.bin
 

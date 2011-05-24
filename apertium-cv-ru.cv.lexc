@@ -441,7 +441,7 @@ LEXICON Numerals
 пилӗк NUMshort ;
 пилӗк:пиллӗк NUMlong ;
 
-çитмӗл NUMshort ;
+ҫитмӗл NUMshort ;
 
 млн%.:млн%. NUM-ABBR ;
 
@@ -465,7 +465,7 @@ LEXICON NominalStems
 департамент NOM-C-REG ; 
 кун NOM-C-REG ;
 кӑнтӑр NOM-C-REG ; 
-кӗçнерни% кун NOM-C-REG ; ! "четверг"
+кӗҫнерни% кун NOM-C-REG ; ! "четверг"
 лаптӑк NOM-C-REG ; ! "площадь, пространство; участок"
 мир NOM-C-REG ; 
 мулкач NOM-C-REG ; ! "" 
