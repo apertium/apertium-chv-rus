@@ -64,10 +64,10 @@
         </let>
         <out>
           <chunk>
-            <lit v="из"/>
+            <lit v="с"/>
             <lit-tag v="PREP"/>
             <lit v="{^"/>
-            <lit v="из"/>
+            <lit v="с"/>
             <lit-tag v="pr"/>
             <lit v="$}"/> 
           </chunk>
