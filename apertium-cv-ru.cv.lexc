@@ -548,12 +548,14 @@ LEXICON ProperNouns
 Карл NP-ANT-MSC-C ; 
 Максим NP-ANT-MSC-C ; 
 Петӗр NP-ANT-MSC-C ; 
+Александр NP-ANT-MSC-C ; 
 
 Анна NP-ANT-FEM-V ; 
 Екатерина NP-ANT-FEM-V ; 
 Ирина NP-ANT-FEM-V ; 
 Марина NP-ANT-FEM-V ; 
 Яна NP-ANT-FEM-V ; 
+Ольга NP-ANT-FEM-V ; 
 
 Ленин NP-COG-MF-C ;
 Маркс NP-COG-MF-C ;
