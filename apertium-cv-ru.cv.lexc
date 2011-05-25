@@ -528,6 +528,7 @@ LEXICON NominalStems
 завод NOM-C-REG ; 
 трактор NOM-C-REG ; 
 католик NOM-C-REG ; 
+редактор NOM-C-REG ; 
 колхозник NOM-C-REG ; 
 поезд NOM-C-REG ; 
 
@@ -543,12 +544,29 @@ LEXICON ProperNouns
 Мускав NP-TOP-C ; 
 Шупашкар NP-TOP-C ; 
 
+Австри NP-TOP-V ; 
+Франци NP-TOP-V ; 
+Германи NP-TOP-V ; 
+Словаки NP-TOP-V ; 
+Япони NP-TOP-V ; 
+Серби NP-TOP-V ; 
+
 Владимир NP-ANT-MSC-C ; 
 Иван NP-ANT-MSC-C ; 
 Карл NP-ANT-MSC-C ; 
 Максим NP-ANT-MSC-C ; 
 Петӗр NP-ANT-MSC-C ; 
 Александр NP-ANT-MSC-C ; 
+Михаил NP-ANT-MSC-C ; 
+Олег NP-ANT-MSC-C ; 
+Борис NP-ANT-MSC-C ; 
+Леонид NP-ANT-MSC-C ; 
+Николай NP-ANT-MSC-C ; 
+Сергей NP-ANT-MSC-C ; 
+Евгений NP-ANT-MSC-C ; 
+Григорий NP-ANT-MSC-C ; 
+Георгий NP-ANT-MSC-C ; 
+Алексей NP-ANT-MSC-C ; 
 
 Анна NP-ANT-FEM-V ; 
 Екатерина NP-ANT-FEM-V ; 
@@ -556,6 +574,8 @@ LEXICON ProperNouns
 Марина NP-ANT-FEM-V ; 
 Яна NP-ANT-FEM-V ; 
 Ольга NP-ANT-FEM-V ; 
+Ева NP-ANT-FEM-V ; 
+Мария NP-ANT-FEM-V ; 
 
 Ленин NP-COG-MF-C ;
 Маркс NP-COG-MF-C ;
@@ -606,33 +626,35 @@ LEXICON Particles
 
 LEXICON VerbStems 
 
-пул C-STEM-V-REG ; 
-кил C-STEM-V-REG ; ! "идти, ехать"
+вырнаҫ C-STEM-V-REG ; ! "располагаться, расмещаться"
 ил C-STEM-V-REG ;
-сыp C-STEM-V-REG ;
-тух C-STEM-V-REG ;
+кил C-STEM-V-REG ; ! "идти, ехать"
+кур C-STEM-V-REG ; ! "видеть"
+пул C-STEM-V-REG ; ! "быть"
 пух C-STEM-V-REG ; ! "собирать"
-хыр C-STEM-V-REG ; ! "брить"
-туп C-STEM-V-REG ;
-чуп C-STEM-V-REG ; ! "бежать"
+сыp C-STEM-V-REG ;
 тат C-STEM-V-REG ;
-ҫӗр C-STEM-V-REG ; ! "гнить, тлеть"
+туп C-STEM-V-REG ;
+тух C-STEM-V-REG ;
+лар C-STEM-V-REG ; ! "садиться; сидеть; стоять"
+тӑр C-STEM-V-REG ; ! "стоять" 
+хатӗрлен C-STEM-V-REG ; ! "готовиться, собираться"
+хыр C-STEM-V-REG ; ! "брить"
+чуп C-STEM-V-REG ; ! "бежать"
 юх C-STEM-V-REG ; ! "течь, литься"
 ҫак C-STEM-V-REG ; ! "вешать"
-вырнаҫ C-STEM-V-REG ; ! "располагаться, расмещаться"
-кур C-STEM-V-REG ; ! "видеть"
-хатӗрлен C-STEM-V-REG ; ! "готовиться, собираться"
+ҫӗр C-STEM-V-REG ; ! "гнить, тлеть"
 ӗҫ C-STEM-V-REG ; ! "пить, пировать, выпивать"
 
-тӑва V-STEM-V-REG ;
-кая V-STEM-V-REG ;
-кай C-STEM-V-REG ;
-те V-STEM-V-REG ;
-сывла V-STEM-V-REG ;
 вула V-STEM-V-REG ;
-ӗҫле V-STEM-V-REG ;
-хатӗрле V-STEM-V-REG ; ! "готовить, заготавливать, запасать"
+кай C-STEM-V-REG ;
+кая V-STEM-V-REG ;
 кӗрле V-STEM-V-REG ; ! "шуметь"
+сывла V-STEM-V-REG ;
+те V-STEM-V-REG ;
+тӑва V-STEM-V-REG ;
+хатӗрле V-STEM-V-REG ; ! "готовить, заготавливать, запасать"
+ӗҫле V-STEM-V-REG ;
 
 пырса% кала V-STEM-V-REG ;
 тухса% кай C-STEM-V-REG ;
