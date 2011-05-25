@@ -258,6 +258,7 @@ LEXICON NUMshort
 LEXICON NUMlong
 
 %<num%>%<pred%>: # ;
+%<num%>%<ord%>:м%{Ă%}ш # ;
 
 LEXICON NUM-ABBR
 
@@ -462,6 +463,7 @@ LEXICON AdjStems
 чылай ADJ ;
 чӑваш ADJ ; ! "чувашский"
 пӗчӗк ADJ ;
+ҫын ADJ ; ! "человеческий"
 урлӑ ADJ ; ! "поперечный" 
 тӗп ADJ ; ! "главный, основной"
 кӗрет ADJ ; ! "открытый, гласный"
@@ -494,6 +496,7 @@ LEXICON NominalStems
 ял NOM-C-REG ; ! "село, деревня" 
 ҫул NOM-C-REG ; ! "" 
 ҫурт NOM-C-REG ;
+ҫын NOM-C-REG ; ! "человек" 
 тӗп NOM-C-REG ; ! "дно, днище; подошва"
 ҫурҫӗр NOM-C-REG ; 
 ҫухрӑм NOM-C-REG ; ! "верста, километр" 
