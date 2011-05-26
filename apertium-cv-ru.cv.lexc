@@ -132,6 +132,37 @@ LEXICON NOM-DECL-C
 %<dist%>:%>серен # ;          ! 
 %<direc%>:%>%{A%}лл%{A%} # ;          ! 
 
+LEXICON NOM-DECL-C-BACK
+
+%<abs%>: # ;
+
+! 1.  -ø          Optional with any stem
+! 2.  >Ăn         After polysyllabic consonant stems and vocalic stems in -U employing
+!                their stem alternant in -Ăv to replace U; some monosyllabic consonant
+!                stems
+! 3.  >n or >Ăn   After polysyllabic consonant stems except U and A
+! 4.  C¹C¹Ă>N     After polysyllabic vowel stems in >-C¹Ă
+! 5.  C¹C²Ă>n     After polysyllabic vowel stems in >-C¹C²Ă
+! 6.  C¹>Ǎn       After borrowed polysyllabic stems in C¹C¹
+! 7.  C¹C¹>Ăn     After some monosyllabic stems in C¹
+! 8.  >n or >jěn  After native and foreign stems in -i
+! 9.  -ă>n        After borrowed vowel stems in -a, -ja, -e, -u and some in -o
+! 10. -o>n        After some borrowed vowel stems in -o
+! 11. -s>ăn       After borrowed stems in -st'      
+
+%<gen%>:%>ан # ;        ! 
+
+%<obj%>%<ind%>: # ;          ! 
+%<obj%>%<def%>:%>а # ;          ! 
+%<loc%>:%>%{р%}а # ;        ! 
+%<abl%>:%>%{р%}ан # ;        ! 
+%<ins%>:%>па # ;        ! 
+%<fin%>:%>шӑн # ;      ! 
+%<priv%>:%>сӑр # ;      ! 
+%<term%>:%>чен # ;          ! 
+%<dist%>:%>серен # ;          ! 
+%<direc%>:%>алла # ;          ! 
+
 LEXICON NOM-DECL-V
 
 %<abs%>: # ;
@@ -147,6 +178,11 @@ LEXICON NOM-DECL-V
 %<term%>:%>чен # ;          ! 
 %<dist%>:%>серен # ;          ! 
 %<direc%>:%>лл%{A%} # ;          ! 
+
+LEXICON NOM-PLUR-BACK-LOAN
+
+%<pl%>:%>се%{н%} NOM-DECL-C-BACK ;
+NOM-DECL-C-BACK ;
 
 LEXICON NOM-PLUR-C
 
@@ -199,6 +235,16 @@ LEXICON NOM-POSS-C
 %<px3pl%>:%>ӗ NOM-PLUR-C ;
 NOM-PLUR-C ;
 
+LEXICON NOM-POSS-BACK-LOAN
+
+%<px1sg%>:%>ӑм NOM-PLUR-BACK-LOAN ;
+%<px2sg%>:%>у NOM-PLUR-BACK-LOAN ;
+%<px3sg%>:%>ӗ NOM-PLUR-BACK-LOAN ;
+%<px1pl%>:%>ӑмӑр NOM-PLUR-BACK-LOAN ;
+%<px2pl%>:%>ӑр NOM-PLUR-BACK-LOAN ;
+%<px3pl%>:%>ӗ NOM-PLUR-BACK-LOAN ;
+NOM-PLUR-BACK-LOAN ;
+
 LEXICON NOM-C-REG
 
 %<n%>: NOM-POSS-C ;
@@ -215,6 +261,11 @@ LEXICON NOM-U-REG
 LEXICON NOM-V-REG
 
 %<n%>: NOM-POSS-V ;
+
+LEXICON NOM-K-LOAN
+
+%<n%>: NOM-POSS-BACK-LOAN ;
+
 
 
 
@@ -501,6 +552,9 @@ LEXICON NominalStems
 ҫурҫӗр NOM-C-REG ; 
 ҫухрӑм NOM-C-REG ; ! "верста, километр" 
 ҫӗр NOM-C-REG ; ! "ночь, земля" 
+старик NOM-C-REG ; ! "" 
+праҫник NOM-C-REG ; ! "" 
+премӗк NOM-C-REG ; ! ""
 
 ача NOM-V-REG ;
 атте NOM-V-REG ; ! "отец"
@@ -522,12 +576,17 @@ LEXICON NominalStems
 депо NOM-O-REG ;
 бюро NOM-O-REG ;
 
+техник NOM-K-LOAN ;  ! "техник"
+колхозник NOM-K-LOAN ;  ! "колхозник"
+чертӗжник NOM-K-LOAN ;  ! ""
+механик NOM-K-LOAN ;  ! ""
+
 ! -- Words with -o- that presumably violate vowel harmony
 
 семинар NOM-V-REG ; ! "семинар"
 завод NOM-C-REG ; 
 трактор NOM-C-REG ; 
-католик NOM-C-REG ; 
+католик NOM-C-REG ;  ! "" {католиксемпе}
 редактор NOM-C-REG ; 
 колхозник NOM-C-REG ; 
 поезд NOM-C-REG ; 

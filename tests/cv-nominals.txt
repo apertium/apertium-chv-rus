@@ -1,5 +1,5 @@
 Config:
-  hfst:
+  hfst-lookup:
     Gen: ../cv-ru.autogen.hfst
     Morph: ../cv-ru.automorf.hfst
 
