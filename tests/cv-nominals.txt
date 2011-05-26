@@ -75,6 +75,6 @@ Tests:
     кино<n><gen> : кинон                  # 10
     власть<n><gen> : власӑн               # 11
 
-  "[lexc] Gemination in genitive 
+  "[lexc] Gemination in genitive":
     пула<n><gen> : пуллӑн
     йыта<n><gen> : йыттӑн
