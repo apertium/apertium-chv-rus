@@ -1,5 +1,6 @@
 Config:
-  hfst-lookup:
+  hfst:
+    App: hfst-lookup
     Gen: ../cv-ru.autogen.hfst
     Morph: ../cv-ru.automorf.hfst
 
@@ -69,5 +70,11 @@ Tests:
     ҫыру<n><gen> : ҫырӑвӑн                # 2
     пӳ<n><gen> : пӗвӗн                    # 2
     класс<n><gen> : класӑн                # 6
+    шӑши<n><gen> : шӑшин                  # 8 
+    шӑши<n><gen> : шӑшийӗн                # 8
     кино<n><gen> : кинон                  # 10
     власть<n><gen> : власӑн               # 11
+
+  "[lexc] Gemination in genitive 
+    пула<n><gen> : пуллӑн
+    йыта<n><gen> : йыттӑн
