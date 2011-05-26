@@ -53,3 +53,21 @@ Tests:
     бюро<n><px2pl><abs> : бюровӗр
     бюро<n><px3pl><abs> : бюровӗ
 
+  "[lexc] Old loanwords obeying harmony": 
+    старик<n><abs> : старик
+    старик<n><gen> : старикӗн
+    старик<n><dat> : старике
+    старик<n><ins> : старикпе
+   
+  "[lexc] New loanwords not obeying harmony": 
+    техник<n><abs> : техник
+    техник<n><gen> : техникӑн
+    техник<n><dat> : техника
+    техник<n><ins> : техникпа
+
+  "[lexc] Genitive":
+    ҫыру<n><gen> : ҫырӑвӑн                # 2
+    пӳ<n><gen> : пӗвӗн                    # 2
+    класс<n><gen> : класӑн                # 6
+    кино<n><gen> : кинон                  # 10
+    власть<n><gen> : власӑн               # 11
