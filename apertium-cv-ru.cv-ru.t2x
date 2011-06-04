@@ -74,7 +74,9 @@
             </get-case-from>
             <lit-tag v="PREP"/>
             <lit v="{^"/>
+            <get-case-from pos="1">
             <lit v="с"/>
+            </get-case-from>
             <lit-tag v="pr"/>
             <lit v="$}"/> 
           </chunk>
