@@ -121,6 +121,8 @@
     <e c="  0"><p><l>ӗҫ<s n="n"/></l><r>работа<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
     <e slr="1"><p><l>ӗҫ<s n="n"/></l><r>труд<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
     <e c="  0"><p><l>ир<s n="n"/></l><r>утро<s n="n"/><s n="nt"/><s n="nn"/></r></p></e>
+    <e c="  0"><p><l>юлташ<s n="n"/></l><r>друг<s n="n"/><s n="m"/><s n="aa"/></r></p></e>
+    <e c="  0"><p><l>ҫыр<s n="n"/></l><r>письмо<s n="n"/><s n="nt"/><s n="nn"/></r></p></e>
 
     <!-- SECTION: Proper nouns -->
 
@@ -152,6 +154,7 @@
     <e c="  0"><p><l>вула<s n="v"/></l><r>читать<s n="vblex"/><s n="imperf"/></r></p></e>
     <e c="  0"><p><l>вул<s n="v"/></l><r>читать<s n="vblex"/><s n="imperf"/></r></p></e>
     <e c="  0"><p><l>ҫит<s n="v"/></l><r>доходить<s n="vblex"/><s n="perf"/></r></p></e>
+    <e c="  0"><p><l>ил<s n="v"/></l><r>получать<s n="vblex"/><s n="imperf"/></r></p></e>
 
     <!-- SECTION: Interjections -->
 

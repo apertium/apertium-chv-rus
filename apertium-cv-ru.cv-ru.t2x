@@ -69,7 +69,9 @@
         </let>
         <out>
           <chunk>
+            <get-case-from pos="1">
             <lit v="с"/> <!-- с, от, из -->
+            </get-case-from>
             <lit-tag v="PREP"/>
             <lit v="{^"/>
             <lit v="с"/>

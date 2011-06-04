@@ -555,6 +555,7 @@ LEXICON NominalStems
 старик NOM-C-REG ; ! "" 
 праҫник NOM-C-REG ; ! "" 
 премӗк NOM-C-REG ; ! ""
+юлташ NOM-C-REG ; ! "друг"
 ир NOM-C-REG ; ! "утро"
 
 ача NOM-V-REG ;
@@ -709,6 +710,7 @@ LEXICON VerbStems
 ҫит C-STEM-V-REG ; ! "достиграть, доходить, доезжать, добираться"
 
 вула V-STEM-V-REG ;
+васка V-STEM-V-REG ; 
 кай C-STEM-V-REG ;
 кая V-STEM-V-REG ;
 кӗрле V-STEM-V-REG ; ! "шуметь"

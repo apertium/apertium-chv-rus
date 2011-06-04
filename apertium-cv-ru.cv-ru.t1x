@@ -170,6 +170,17 @@
             <let><clip pos="1" side="tl" part="prs"/><lit v=""/></let>
             <let><var n="genere"/><lit-tag v="mfn"/></let>
         </when>
+        <when> <!-- Remove person from past tense -->
+            <test>
+              <and>
+                <equal><clip pos="1" side="sl" part="temps"/><lit-tag v="past"/></equal>
+                <equal><clip pos="1" side="sl" part="nbr"/><lit-tag v="sg"/></equal>
+              </and>
+            </test>
+            <let><clip pos="1" side="tl" part="prs"/><lit v=""/></let>
+            <let><var n="genere"/><lit-tag v="GD"/></let>
+        </when>
+
 
     </choose>
 </def-macro>
