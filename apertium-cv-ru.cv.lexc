@@ -555,6 +555,7 @@ LEXICON NominalStems
 старик NOM-C-REG ; ! "" 
 праҫник NOM-C-REG ; ! "" 
 премӗк NOM-C-REG ; ! ""
+ир NOM-C-REG ; ! "утро"
 
 ача NOM-V-REG ;
 атте NOM-V-REG ; ! "отец"
@@ -685,18 +686,18 @@ LEXICON Particles
 
 LEXICON VerbStems 
 
-вырнаҫ C-STEM-V-REG ; ! "располагаться, расмещаться"
 вул C-STEM-V-REG ; ! "читать"
+вырнаҫ C-STEM-V-REG ; ! "располагаться, расмещаться"
 ил C-STEM-V-REG ;
 кил C-STEM-V-REG ; ! "идти, ехать"
 кур C-STEM-V-REG ; ! "видеть"
+лар C-STEM-V-REG ; ! "садиться; сидеть; стоять"
 пул C-STEM-V-REG ; ! "быть"
 пух C-STEM-V-REG ; ! "собирать"
 сыp C-STEM-V-REG ;
 тат C-STEM-V-REG ;
 туп C-STEM-V-REG ;
 тух C-STEM-V-REG ;
-лар C-STEM-V-REG ; ! "садиться; сидеть; стоять"
 тӑр C-STEM-V-REG ; ! "стоять" 
 хатӗрлен C-STEM-V-REG ; ! "готовиться, собираться"
 хыр C-STEM-V-REG ; ! "брить"
@@ -705,6 +706,7 @@ LEXICON VerbStems
 ҫак C-STEM-V-REG ; ! "вешать"
 ҫӗр C-STEM-V-REG ; ! "гнить, тлеть"
 ӗҫ C-STEM-V-REG ; ! "пить, пировать, выпивать"
+ҫит C-STEM-V-REG ; ! "достиграть, доходить, доезжать, добираться"
 
 вула V-STEM-V-REG ;
 кай C-STEM-V-REG ;

@@ -30,6 +30,7 @@
     <sdef n="mf"       c="Masculine / feminine"/>
 
     <sdef n="ant"      c="Antroponym"/>
+    <sdef n="top"      c="Toponym"/>
 
     <sdef n="nn"       c="Inanimate"/>
     <sdef n="aa"       c="Animate"/>
@@ -119,11 +120,13 @@
     <e c="  0"><p><l>ӗҫлекен<s n="n"/></l><r>работник<s n="n"/><s n="m"/><s n="aa"/></r></p></e> <!-- @C -->
     <e c="  0"><p><l>ӗҫ<s n="n"/></l><r>работа<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
     <e slr="1"><p><l>ӗҫ<s n="n"/></l><r>труд<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
+    <e c="  0"><p><l>ир<s n="n"/></l><r>утро<s n="n"/><s n="nt"/><s n="nn"/></r></p></e>
 
     <!-- SECTION: Proper nouns -->
 
     <e c="  0"><p><l>Турӑ<s n="np"/></l><r>Бог<s n="n"/><s n="m"/><s n="aa"/></r></p></e>
     <e c="  0"><p><l>Петӗр<s n="np"/><s n="ant"/><s n="m"/></l><r>Петӗр<s n="np"/><s n="ant"/><s n="m"/></r></p></e>
+    <e c="  0"><p><l>Шупашкар<s n="np"/><s n="top"/></l><r>Чебоксары<s n="np"/><s n="top"/></r></p></e>
 
     <!-- SECTION: Adjectives -->
 
@@ -148,6 +151,7 @@
     <e c="  0"><p><l>кур<s n="v"/></l><r>видеть<s n="vblex"/><s n="imperf"/></r></p></e>
     <e c="  0"><p><l>вула<s n="v"/></l><r>читать<s n="vblex"/><s n="imperf"/></r></p></e>
     <e c="  0"><p><l>вул<s n="v"/></l><r>читать<s n="vblex"/><s n="imperf"/></r></p></e>
+    <e c="  0"><p><l>ҫит<s n="v"/></l><r>доходить<s n="vblex"/><s n="perf"/></r></p></e>
 
     <!-- SECTION: Interjections -->
 

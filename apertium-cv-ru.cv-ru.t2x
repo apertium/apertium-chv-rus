@@ -69,7 +69,7 @@
         </let>
         <out>
           <chunk>
-            <lit v="с"/>
+            <lit v="с"/> <!-- с, от, из -->
             <lit-tag v="PREP"/>
             <lit v="{^"/>
             <lit v="с"/>
