@@ -3,6 +3,10 @@
 <postchunk>
 
   <section-def-cats>
+    <def-cat n="pron">
+      <cat-item name="pron"/>
+    </def-cat>
+
     <def-cat n="verb">
       <cat-item name="verb"/>
     </def-cat>
@@ -54,6 +58,34 @@
         </out>
       </action>
     </rule>
+
+    <rule comment="CHUNK:">
+      <pattern>
+        <pattern-item n="pron"/>
+      </pattern>
+      <action>
+        <choose>
+          <when>
+            <test>
+              <equal>
+                <clip pos="1" part="gen"/>
+                <lit-tag v="GD"/>
+              </equal>
+            </test>
+            <let>
+              <clip pos="1" part="gen"/>
+              <lit-tag v="m"/>
+            </let>
+          </when>
+        </choose>
+        <out>
+          <lu>
+            <clip pos="1" part="whole"/>
+          </lu>
+        </out>
+      </action>
+    </rule>
+
 
   </section-rules>
 </postchunk>

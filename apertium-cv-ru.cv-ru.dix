@@ -74,7 +74,7 @@
     <e c="  0"><p><l>вӑл<s n="prn"/><s n="pers"/><s n="p3"/><s n="sg"/></l><r>prpers<s n="prn"/><s n="p3"/><s n="GD"/><s n="sg"/></r></p></e>
     <e c="  0"><p><l>эпир<s n="prn"/><s n="pers"/><s n="p1"/><s n="pl"/></l><r>prpers<s n="prn"/><s n="p1"/><s n="mf"/><s n="pl"/></r></p></e>
     <e c="  0"><p><l>эсир<s n="prn"/><s n="pers"/><s n="p2"/><s n="pl"/></l><r>prpers<s n="prn"/><s n="p2"/><s n="mf"/><s n="pl"/></r></p></e>
-    <e c="  0"><p><l>вӗсем<s n="prn"/><s n="pers"/><s n="p3"/><s n="pl"/></l><r>prpers<s n="prn"/><s n="p3"/><s n="GD"/><s n="pl"/></r></p></e>
+    <e c="  0"><p><l>вӗсем<s n="prn"/><s n="pers"/><s n="p3"/><s n="pl"/></l><r>prpers<s n="prn"/><s n="p3"/><s n="mf"/><s n="pl"/></r></p></e>
 
     <e c="  0"><p><l>ку<s n="prn"/><s n="dem"/></l><r>это<s n="prn"/><s n="dem"/></r></p></e>
 
@@ -100,7 +100,7 @@
     <e c="  0"><p><l>кӑнтӑр<s n="n"/></l><r>юг<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
     <e c="  0"><p><l>кӗнеке<s n="n"/></l><r>книга<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
     <e c="  0"><p><l>кӗҫнерни<b/>кун<s n="n"/></l><r>четверг<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
-    <e c="  0"><p><l>пичче<s n="n"/></l><r>брать<s n="n"/><s n="m"/><s n="aa"/></r></p></e>
+    <e c="  0"><p><l>пичче<s n="n"/></l><r>брат<s n="n"/><s n="m"/><s n="aa"/></r></p></e> <!-- мой брат -->
     <e c="  0"><p><l>пӳрт<s n="n"/></l><r>дом<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
     <e c="  0"><p><l>трактор<s n="n"/></l><r>трактор<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
     <e c="  0"><p><l>тус<s n="n"/></l><r>друг<s n="n"/><s n="m"/><s n="aa"/></r></p></e>
@@ -123,6 +123,9 @@
     <e c="  0"><p><l>ир<s n="n"/></l><r>утро<s n="n"/><s n="nt"/><s n="nn"/></r></p></e>
     <e c="  0"><p><l>юлташ<s n="n"/></l><r>друг<s n="n"/><s n="m"/><s n="aa"/></r></p></e>
     <e c="  0"><p><l>ҫыр<s n="n"/></l><r>письмо<s n="n"/><s n="nt"/><s n="nn"/></r></p></e>
+    <e c="  0"><p><l>шкул<s n="n"/></l><r>школа<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
+    <e c="  0"><p><l>урам<s n="n"/></l><r>улица<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
+    <e c="  0"><p><l>ҫӗлӗк<s n="n"/></l><r>шапка<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
 
     <!-- SECTION: Proper nouns -->
 
@@ -155,6 +158,7 @@
     <e c="  0"><p><l>вул<s n="v"/></l><r>читать<s n="vblex"/><s n="imperf"/></r></p></e>
     <e c="  0"><p><l>ҫит<s n="v"/></l><r>доходить<s n="vblex"/><s n="perf"/></r></p></e>
     <e c="  0"><p><l>ил<s n="v"/></l><r>получать<s n="vblex"/><s n="imperf"/></r></p></e>
+    <e c="  0"><p><l>тух<s n="v"/></l><r>выходить<s n="vblex"/><s n="imperf"/></r></p></e>
 
     <!-- SECTION: Interjections -->
 

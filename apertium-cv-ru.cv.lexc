@@ -555,16 +555,20 @@ LEXICON NominalStems
 старик NOM-C-REG ; ! "" 
 праҫник NOM-C-REG ; ! "" 
 премӗк NOM-C-REG ; ! ""
+шкул NOM-C-REG ; ! "школа"
 юлташ NOM-C-REG ; ! "друг"
 ир NOM-C-REG ; ! "утро"
+ҫӗлӗк NOM-C-REG ; ! "шапка"
 
 ача NOM-V-REG ;
+хула NOM-V-REG ; ! "город"
 атте NOM-V-REG ; ! "отец"
 курма NOM-V-REG ;
 кӗнеке NOM-V-REG ; ! "книга"
 кӳлӗ NOM-V-REG ; ! "озеро" 
 республика NOM-V-REG ;
 ту NOM-V-REG ;
+урам NOM-V-REG ; ! "улица"
 тӑва NOM-V-REG ;
 тӳпе NOM-V-REG ;
 сӑмса NOM-V-REG ; ! "нос" 
@@ -594,6 +598,7 @@ LEXICON NominalStems
 поезд NOM-C-REG ; 
 
 фонетика NOM-V-REG ;
+библиотека NOM-V-REG ; ! "библиотека"
 
 LEXICON ProperNouns
 
@@ -708,6 +713,7 @@ LEXICON VerbStems
 ҫӗр C-STEM-V-REG ; ! "гнить, тлеть"
 ӗҫ C-STEM-V-REG ; ! "пить, пировать, выпивать"
 ҫит C-STEM-V-REG ; ! "достиграть, доходить, доезжать, добираться"
+тух C-STEM-V-REG ; ! "выходить, вылезать; проходить"
 
 вула V-STEM-V-REG ;
 васка V-STEM-V-REG ; 

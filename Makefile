@@ -3,7 +3,7 @@ RU=../apertium-kv-ru/apertium-kv-ru.ru.dix
 all:
 	if [ ! -d .deps ]; then mkdir .deps ; fi
 
-	hfst-lexc apertium-cv-ru.cv.lexc > .deps/cv-ru.lexc.hfst
+	hfst-lexc apertium-cv-ru.cv.lexc -o .deps/cv-ru.lexc.hfst
 	hfst-twolc -R -i apertium-cv-ru.cv.twol -o .deps/cv-ru.twol.hfst
 	hfst-compose-intersect -1 .deps/cv-ru.lexc.hfst -2 .deps/cv-ru.twol.hfst -o .deps/cv-ru.gen.hfst
 	hfst-invert .deps/cv-ru.gen.hfst > .deps/cv-ru.morf.hfst

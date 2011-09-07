@@ -78,3 +78,6 @@ Tests:
   "[lexc] Gemination in genitive":
     пула<n><gen> : пуллӑн
     йыта<n><gen> : йыттӑн
+
+  "[lexc] а -- ӑ alternation in -а final words":
+    библиотека<n><loc> : библиотекӑра
