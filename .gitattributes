@@ -13,3 +13,8 @@ dev/test-sentences.txt -text
 /modes.xml -text
 /pending-tests.sh -text
 tests/cv-nominals.txt -text
+*.dix linguist-language=XML linguist-detectable=true
+*.lrx linguist-language=XML linguist-detectable=true
+*.lsx linguist-language=XML linguist-detectable=true
+*.tsx linguist-language=XML linguist-detectable=true
+*.t[[:digit:]]x linguist-language=XML linguist-detectable=true
