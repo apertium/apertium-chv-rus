@@ -48,7 +48,7 @@
     <sdef n="dem"      c="Demonstrative"/>
     <sdef n="pers"     c="Personal"/>
 
-    <sdef n="imperf"   c="Imperfective"/>
+    <sdef n="impf"   c="Imperfective"/>
     <sdef n="perf"     c="Perfective"/>
 
     <sdef n="GD"       c="Gender to be determined"/>
@@ -149,16 +149,16 @@
     <!-- SECTION: Verbs -->
 
     <e c="  0"><p><l>пул<s n="v"/></l><r>быть<s n="vbser"/></r></p></e>
-    <e c="  0"><p><l>тӑва<s n="v"/></l><r>строить<s n="vblex"/><s n="imperf"/></r></p></e>
-    <e c="  0"><p><l>тат<s n="v"/></l><r>собирать<s n="vblex"/><s n="imperf"/></r></p></e>
-    <e c="  0"><p><l>кил<s n="v"/></l><r>приходить<s n="vblex"/><s n="imperf"/></r></p></e>
-    <e c="  0"><p><l>кай<s n="v"/></l><r>идти<s n="vblex"/><s n="imperf"/></r></p></e>
-    <e c="  0"><p><l>кур<s n="v"/></l><r>видеть<s n="vblex"/><s n="imperf"/></r></p></e>
-    <e c="  0"><p><l>вула<s n="v"/></l><r>читать<s n="vblex"/><s n="imperf"/></r></p></e>
-    <e c="  0"><p><l>вул<s n="v"/></l><r>читать<s n="vblex"/><s n="imperf"/></r></p></e>
+    <e c="  0"><p><l>тӑва<s n="v"/></l><r>строить<s n="vblex"/><s n="impf"/></r></p></e>
+    <e c="  0"><p><l>тат<s n="v"/></l><r>собирать<s n="vblex"/><s n="impf"/></r></p></e>
+    <e c="  0"><p><l>кил<s n="v"/></l><r>приходить<s n="vblex"/><s n="impf"/></r></p></e>
+    <e c="  0"><p><l>кай<s n="v"/></l><r>идти<s n="vblex"/><s n="impf"/></r></p></e>
+    <e c="  0"><p><l>кур<s n="v"/></l><r>видеть<s n="vblex"/><s n="impf"/></r></p></e>
+    <e c="  0"><p><l>вула<s n="v"/></l><r>читать<s n="vblex"/><s n="impf"/></r></p></e>
+    <e c="  0"><p><l>вул<s n="v"/></l><r>читать<s n="vblex"/><s n="impf"/></r></p></e>
     <e c="  0"><p><l>ҫит<s n="v"/></l><r>доходить<s n="vblex"/><s n="perf"/></r></p></e>
-    <e c="  0"><p><l>ил<s n="v"/></l><r>получать<s n="vblex"/><s n="imperf"/></r></p></e>
-    <e c="  0"><p><l>тух<s n="v"/></l><r>выходить<s n="vblex"/><s n="imperf"/></r></p></e>
+    <e c="  0"><p><l>ил<s n="v"/></l><r>получать<s n="vblex"/><s n="impf"/></r></p></e>
+    <e c="  0"><p><l>тух<s n="v"/></l><r>выходить<s n="vblex"/><s n="impf"/></r></p></e>
 
     <!-- SECTION: Interjections -->
 
